@@ -18,9 +18,9 @@ public class UIToggleButton : MonoBehaviour
         // 현재 열린 팝업과 같은 이름이면 닫기
         if (isAnyUIOpen && currentUIName == popupUIName)
         {
-            // UIManager.Instance.ClosePopUpUI();
-            // currentUIName = null;
-            // isAnyUIOpen = false;
+            UIManager.Instance.ClosePopUpUI();
+            currentUIName = null;
+            isAnyUIOpen = false;
             return;
         }
         // 다른 팝업이 열려 있으면 기존 팝업 닫기
