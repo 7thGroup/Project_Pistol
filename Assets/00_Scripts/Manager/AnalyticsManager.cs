@@ -89,7 +89,7 @@ public class AnalyticsManager : SingletonBehaviour<AnalyticsManager>
     {
         string character = GameManager.Instance.selectedCharacter.ToString();
         string weapon = GameManager.Instance.selectedWeapon.ToString();
-        AnalyticsService.Instance.CustomData("GameDataZone", new Dictionary<string, object>
+        AnalyticsService.Instance.CustomData("OverZone1", new Dictionary<string, object>
         {
             {nameof(character), character}, // 캐릭터
             {nameof(weapon), weapon},    // 무기
@@ -105,7 +105,7 @@ public class AnalyticsManager : SingletonBehaviour<AnalyticsManager>
         float accumulationShotAccuracy = StageManager.Instance.shotAccuracy;
         float accumulationHeadShotAccuracy = StageManager.Instance.headShotAccuracy;
         // 커스텀 이벤트 전송
-        AnalyticsService.Instance.CustomData("GameDataZone", new Dictionary<string, object>
+        AnalyticsService.Instance.CustomData("OverZone1", new Dictionary<string, object>
         {
             {nameof(remainTime), remainTime},
             {nameof(stageIndex), stageIndex}, // 스테이지 번호
@@ -122,7 +122,7 @@ public class AnalyticsManager : SingletonBehaviour<AnalyticsManager>
     {
         int FailedStageIndex = RoomManager.Instance.CurStageIndex;
         int FailedRoomIndex = RoomManager.Instance.CurRoomIndex;
-        AnalyticsService.Instance.CustomData("GameDataZone", new Dictionary<string, object>
+        AnalyticsService.Instance.CustomData("OverZone1", new Dictionary<string, object>
         {
             {nameof(FailedStageIndex) ,FailedStageIndex},
             {nameof(FailedRoomIndex) ,FailedRoomIndex},
@@ -146,7 +146,7 @@ public class AnalyticsManager : SingletonBehaviour<AnalyticsManager>
     {
         shotRoomAccuracy = roomShotCount == 0 ? 0 : (float)roomHitCount / roomShotCount * 100f;
         headShotRoomAccuracy = roomHitCount == 0 ? 0 : (float)headHitCount / roomHitCount * 100f;
-        AnalyticsService.Instance.CustomData("GameDataZone", new Dictionary<string, object>
+        AnalyticsService.Instance.CustomData("OverZone1", new Dictionary<string, object>
         {
             {nameof(shotRoomAccuracy), shotRoomAccuracy}, // 명중률
             {nameof(headShotRoomAccuracy), headShotRoomAccuracy},    // 헤드 명중률
