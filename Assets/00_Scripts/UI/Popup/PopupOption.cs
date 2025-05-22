@@ -20,7 +20,7 @@ public class PopupOption : PopupUI
     // public float adsSensitivity = 1f;
 
     // 캐싱된 감도 값을 저장할 static 변수
-    [SerializeField]public static float cachedHipSensitivity = 1f;
+    [SerializeField] public static float cachedHipSensitivity = 1f;
     public static float cachedAdsSensitivity = 1f;
 
     private const string HipSensitivityKey = "HipSensitivity";
@@ -76,6 +76,7 @@ public class PopupOption : PopupUI
     }
     private void OnEnable()
     {
+
         //camera = FindObjectOfType<FpsCamera>();
         // PlayerPrefs 값 다시 불러오기
         LoadSensitivity();
@@ -101,14 +102,9 @@ public class PopupOption : PopupUI
     public void ChangeHipSensitivity(float delta)
     {
         cachedHipSensitivity = Mathf.Clamp(cachedHipSensitivity + delta, 0.1f, 9.9f);
-        
+
         PlayerPrefs.SetFloat(HipSensitivityKey, cachedHipSensitivity);
         UpdateSensitivityTexts();
-
-        // if (GetComponent<Camera>() != null)
-        // {
-        //     GetComponent<Camera>().SetSensitivity(cachedHipSensitivity); // SetSensitivity 메서드를 사용하여 바로 적용
-        // }
     }
 
     public void ChangeADSSensitivity(float delta)//정조준 민감도 아직 구현x
@@ -133,7 +129,7 @@ public class PopupOption : PopupUI
         bgmValueText.text = bgmSlider.value.ToString("0");
     }
 
-    private void LoadSensitivity()
+    public void LoadSensitivity()
     {
         // PlayerPrefs에서 감도 값 불러오기
         cachedHipSensitivity = PlayerPrefs.GetFloat(HipSensitivityKey, 1f);
@@ -149,7 +145,13 @@ public class PopupOption : PopupUI
 
     public void OnClickResumeBtn()
     {
-        UIManager.Instance.ClosePopUpUI();
+        GameManager.Instance.TogglePopup(false);
+    }
+
+    public static void InitSensitivity() //플레이어 생성시 호출할 함수
+    {
+        cachedAdsSensitivity = PlayerPrefs.GetFloat(AdsSensitivityKey, 1f);
+        cachedHipSensitivity = PlayerPrefs.GetFloat(HipSensitivityKey, 1f);
     }
 
 }

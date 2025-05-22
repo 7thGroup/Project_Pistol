@@ -28,7 +28,7 @@ public class PlayerAttackState : PlayerBaseState
         var animInfo = stateMachine.Player.Animator.GetCurrentAnimatorStateInfo(0);
 
         // 애니메이션이 일정 진행률에 도달하면 한 번만 총알 발사
-        if (!hasShot && animInfo.IsName("Attack") && animInfo.normalizedTime >= 0.3f && animInfo.normalizedTime < 0.9f)
+        if (!hasShot && animInfo.IsName("Attack") && animInfo.normalizedTime < 0.9f)
         {
             hasShot = true;
             Shoot();

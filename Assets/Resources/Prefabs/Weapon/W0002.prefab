@@ -291,6 +291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4792213471762777485}
+  - component: {fileID: 5917158180037948928}
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Gun
@@ -307,12 +308,24 @@ Transform:
   m_GameObject: {fileID: 2095858884266601840}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.045, z: 0.155}
+  m_LocalPosition: {x: 0, y: 0.0359, z: 0.225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3364649323103962738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5917158180037948928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095858884266601840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5fdbcb8c7c96409497621e0a282521f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3805473063251034605
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,7 +584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9082369919939926800}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7267932, y: -0.10467327, z: -0.19301297, w: 0.6508158}
+  m_LocalRotation: {x: -0.7267935, y: -0.10467414, z: -0.19301423, w: 0.65081495}
   m_LocalPosition: {x: 0.00001, y: -0, z: -0.00002}
   m_LocalScale: {x: 0.015, y: 0.012, z: 0.012}
   m_ConstrainProportionsScale: 0
@@ -586,7 +599,7 @@ Transform:
   - {fileID: 5369707854365757307}
   - {fileID: 582985819694401489}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -99.452, y: -61.496002, z: 37.108994}
+  m_LocalEulerAnglesHint: {x: -96.808, y: -77.076996, z: 47.296005}
 --- !u!95 &3965765355708193214
 Animator:
   serializedVersion: 5
@@ -621,7 +634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isReloading: 0
-  barrelLocation: {fileID: 4792213471762777485}
+  barrelLocation: {fileID: 1969085736256024499}
   casingExitLocation: {fileID: 1941322330972735242}
 --- !u!114 &7180774674789702950
 MonoBehaviour:
