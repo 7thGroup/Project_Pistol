@@ -89,7 +89,7 @@ public class AnalyticsManager : SingletonBehaviour<AnalyticsManager>
     {
         string character = GameManager.Instance.selectedCharacter.ToString();
         string weapon = GameManager.Instance.selectedWeapon.ToString();
-        AnalyticsService.Instance.CustomData("OverZone1", new Dictionary<string, object>
+        AnalyticsService.Instance.CustomData("GameDataZone", new Dictionary<string, object>
         {
             {nameof(character), character}, // 캐릭터
             {nameof(weapon), weapon},    // 무기
@@ -102,17 +102,20 @@ public class AnalyticsManager : SingletonBehaviour<AnalyticsManager>
         int stageIndex = RoomManager.Instance.CurStageIndex;
         int roomIndex = RoomManager.Instance.CurRoomIndex;
         int score = StageManager.Instance.GameScore;
+        string stageAndRoom = $"{RoomManager.Instance.CurStageIndex} - {roomIndex}";
         float accumulationShotAccuracy = StageManager.Instance.shotAccuracy;
         float accumulationHeadShotAccuracy = StageManager.Instance.headShotAccuracy;
+
         // 커스텀 이벤트 전송
-        AnalyticsService.Instance.CustomData("OverZone1", new Dictionary<string, object>
+        AnalyticsService.Instance.CustomData("GameDataZone", new Dictionary<string, object>
         {
             {nameof(remainTime), remainTime},
             {nameof(stageIndex), stageIndex}, // 스테이지 번호
             {nameof(roomIndex), roomIndex},   // 방 번호 
             {nameof(score),score}, // 점수
             {nameof(accumulationShotAccuracy),accumulationShotAccuracy }, // 누적 명중률
-            {nameof(accumulationHeadShotAccuracy),accumulationHeadShotAccuracy} // 누적 헤드샷 명중률
+            {nameof(accumulationHeadShotAccuracy),accumulationHeadShotAccuracy}, // 누적 헤드샷 명중률
+            {nameof(stageAndRoom),stageAndRoom},    
         });
 
         AnalyticsService.Instance.Flush(); // 데이터 전송 강제 트리거
@@ -122,10 +125,14 @@ public class AnalyticsManager : SingletonBehaviour<AnalyticsManager>
     {
         int FailedStageIndex = RoomManager.Instance.CurStageIndex;
         int FailedRoomIndex = RoomManager.Instance.CurRoomIndex;
-        AnalyticsService.Instance.CustomData("OverZone1", new Dictionary<string, object>
+        int Failscore = StageManager.Instance.GameScore;
+        string stageAndRoom = $"{FailedStageIndex} - {FailedRoomIndex}";
+        AnalyticsService.Instance.CustomData("GameDataZone", new Dictionary<string, object>
         {
             {nameof(FailedStageIndex) ,FailedStageIndex},
             {nameof(FailedRoomIndex) ,FailedRoomIndex},
+            {nameof(Failscore),Failscore},
+            {nameof(stageAndRoom),stageAndRoom}
         });
         AnalyticsService.Instance.Flush(); // 데이터 전송 강제 트리거
     }
@@ -146,7 +153,7 @@ public class AnalyticsManager : SingletonBehaviour<AnalyticsManager>
     {
         shotRoomAccuracy = roomShotCount == 0 ? 0 : (float)roomHitCount / roomShotCount * 100f;
         headShotRoomAccuracy = roomHitCount == 0 ? 0 : (float)headHitCount / roomHitCount * 100f;
-        AnalyticsService.Instance.CustomData("OverZone1", new Dictionary<string, object>
+        AnalyticsService.Instance.CustomData("GameDataZone", new Dictionary<string, object>
         {
             {nameof(shotRoomAccuracy), shotRoomAccuracy}, // 명중률
             {nameof(headShotRoomAccuracy), headShotRoomAccuracy},    // 헤드 명중률
