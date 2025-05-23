@@ -13,6 +13,8 @@ public class PlayerStateMachine : StateMachine
     public PlayerAttackState AttackState { get; private set; }
     public PlayerReloadState ReloadState { get; private set; }
 
+    public float CurrentSensitivity => IsAds ? PopupOption.cachedAdsSensitivity : PopupOption.cachedHipSensitivity;
+
     public PlayerStateMachine(Player player)
     {
         Player = player;

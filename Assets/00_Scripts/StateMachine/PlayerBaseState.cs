@@ -145,9 +145,9 @@ public class PlayerBaseState : IState
         }
         return finalSpeed;
     }
-    private void RotateView()
+    private void RotateView() //좌우 회전
     {
-        float sensitivity = 1f;
+        float sensitivity = stateMachine.CurrentSensitivity * 0.1f;
 
         stateMachine.RotationX -= stateMachine.MouseInput.y * sensitivity;
 
@@ -162,6 +162,6 @@ public class PlayerBaseState : IState
         Quaternion offsetRotation = Quaternion.Euler(-90f, 0f, 0f);
         stateMachine.Player.Motion.ArmTransform.localRotation = Quaternion.Euler(totalX, 0, 0) * offsetRotation;
 
-        stateMachine.Player.transform.Rotate(Vector3.up * stateMachine.MouseInput.x);
+        stateMachine.Player.transform.Rotate(Vector3.up * stateMachine.MouseInput.x * sensitivity);
     }
 }

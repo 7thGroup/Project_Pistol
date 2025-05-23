@@ -84,7 +84,7 @@ public class WeaponController : MonoBehaviour
 
         shootDirection = barrelLocation.forward;
 
-        Vector3 loweredPosition = barrelLocation.position + Vector3.down * 0.1f;
+        Vector3 loweredPosition = barrelLocation.position;
         Ray ray = new Ray(loweredPosition, shootDirection);
         Debug.DrawRay(loweredPosition, shootDirection * 100f, Color.red,30f ); 
         if (Physics.Raycast(ray, out RaycastHit hit))

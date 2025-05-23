@@ -4,6 +4,7 @@ public class LobbyScene : BaseScene
 {
     public override void EnterScene()
     {
+        Debug.Log("로딩 엔터");
         GameManager.Instance.selectedCharacter = null;
         GameManager.Instance.selectedWeapon = null;
 

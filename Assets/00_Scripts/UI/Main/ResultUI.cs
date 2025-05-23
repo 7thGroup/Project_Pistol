@@ -32,6 +32,11 @@ public class ResultUI : MainUI
     {
         var bgm = Resources.Load<AudioClip>("Audio/BGM/The Chase Streets");
         SoundManager.Instance.PlayBackgroundMusic(bgm);
+        
+        if (RoomManager.Instance.CurStageIndex >= 8)
+        {
+            AchievementManager.Instance.SpawnAchivement("A0005");
+        }
     }
 
     public override void SetActiveUI(MainUIType activeUIType)
@@ -76,15 +81,19 @@ public class ResultUI : MainUI
                 break;
             case < 275000:
                 rank = RankType.S;
+                AchievementManager.Instance.SpawnAchivement("A0008");
                 break;
             case < 290000:
                 rank = RankType.SS;
+                AchievementManager.Instance.SpawnAchivement("A0009");
                 break;
             case < 299999:
                 rank = RankType.SSS;
+                AchievementManager.Instance.SpawnAchivement("A0010");
                 break;
             default:
                 rank = RankType.SSSS;
+                AchievementManager.Instance.SpawnAchivement("A0011");
                 break;
         }
         

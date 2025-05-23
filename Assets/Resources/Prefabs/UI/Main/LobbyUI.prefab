@@ -425,7 +425,6 @@ GameObject:
   - component: {fileID: 306018670579048500}
   - component: {fileID: 4591451218066513597}
   - component: {fileID: 1563853251428462461}
-  - component: {fileID: 7176657635649413280}
   m_Layer: 5
   m_Name: Option
   m_TagString: Untagged
@@ -551,19 +550,6 @@ MonoBehaviour:
   normalMaterial: {fileID: 2100000, guid: 38c011c3115e9a943b022f946b92cade, type: 2}
   gradientMaterial: {fileID: 2100000, guid: d3ad2bde1a12fbc429d07df2432682ff, type: 2}
   text: {fileID: 7579993368647244378}
---- !u!114 &7176657635649413280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4193978539403247919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4a0cfc770bf64faa84e109cca5992ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  popupUIName: PopupOption
 --- !u!1 &4262681646055998078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aec7641e5a10b84895a44ed9aea9fa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionButton: {fileID: 4591451218066513597}
+  achievementButton: {fileID: 5739038483901967320}
 --- !u!1 &5752869414686621404
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,7 +1181,7 @@ GameObject:
   - component: {fileID: 5739038483901967320}
   - component: {fileID: 8715523137145336375}
   m_Layer: 5
-  m_Name: MyRoomBtn
+  m_Name: Achievement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1583,9 +1571,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'My Room
-
-'
+  m_text: Achievement
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7849fc856e7b64816b7e665ca366b57f, type: 2}
   m_sharedMaterial: {fileID: 8484883436121945821, guid: 7849fc856e7b64816b7e665ca366b57f,
