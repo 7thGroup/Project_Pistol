@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b81b5634abe45788a63f4c38fab2eb, type: 3}
+  m_Name: W0005
+  m_EditorClassIdentifier: 
+  ID: 
+  Name: 
+  Description: 
+  ShootRecoil: 0
+  DMG: 0
+  ReloadTime: 0
+  MaxAmmo: 0
+  Cost: 0

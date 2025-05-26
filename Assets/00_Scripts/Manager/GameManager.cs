@@ -9,6 +9,8 @@ public sealed class GameManager : SingletonBehaviour<GameManager>
     public WeaponSO selectedWeapon;
     public bool isOption = false;
 
+    public int gold = 3000;
+    public Shop Shop;
     /// <summary>
     /// PopupOption 여닫기 
     /// TimeScale기본값 false
@@ -41,7 +43,11 @@ public sealed class GameManager : SingletonBehaviour<GameManager>
             }
         }
     }
-
+    protected override void Awake()
+    {
+        base.Awake();
+        Shop = FindObjectOfType<Shop>();
+    }
     public static void GameQuit()
     {
 #if UNITY_EDITOR
