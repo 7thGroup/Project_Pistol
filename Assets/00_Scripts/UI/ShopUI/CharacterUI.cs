@@ -38,6 +38,7 @@ public class CharacterUI : MonoBehaviour
             ShopManager.Instance.gold -= data.Cost;
             ShopManager.Instance.goldText.text = "Gold: " + ShopManager.Instance.gold;
             ShopManager.Instance.characterItem.Add(data);
+            ShopManager.Instance.LobbySetCharacter(data);
             Destroy(gameObject);
         }
         else
@@ -52,7 +53,7 @@ public class CharacterUI : MonoBehaviour
 
     IEnumerator TextTimer() // 재화 부족 알림 텍스트
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         alarmPanel.SetActive(false);
     }
 
