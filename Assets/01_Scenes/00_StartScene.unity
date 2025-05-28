@@ -175724,7 +175724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1676441431}
-  - component: {fileID: 1676441430}
+  - component: {fileID: 1676441432}
   m_Layer: 0
   m_Name: StovePCSDKManager
   m_TagString: Untagged
@@ -175732,7 +175732,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1676441430
+--- !u!4 &1676441431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676441429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1676441432
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175749,22 +175764,7 @@ MonoBehaviour:
   AppSecret: 1cab9b1a59e6af40a75b4b33677f8a3591380fe59b32e59d1e0d9e71c01e3272de63bdbe820427750e17f486cde91f40
   GameId: GM-21C0-682EC12F_IND
   LogLevel: 4
-  LogPath: C:\Users\Profiler\Desktop\GamePrj\Project_Pistol\Logs
---- !u!4 &1676441431
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676441429}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  LogPath: C:\Users\Profiler\Desktop\Master_Shooter_Trainer
 --- !u!1 &1677618328
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class StovePCSDKManager : MonoBehaviour
     public string GameId;
     public StovePCLogLevel LogLevel;
     public string LogPath;
-    
+
     private StovePCCallback callback;
     private Coroutine runcallbackCoroutine;
 
@@ -50,12 +50,14 @@ public class StovePCSDKManager : MonoBehaviour
         if (StovePCResult.NoError == sdkResult)
         {
             this.runcallbackCoroutine = StartCoroutine(RunCallback(0.5f));
+            Debug.Log("성공");
             // 珥덇린???ㅻ쪟媛 ?놁뼱  RunCallback 二쇨린?? ?몄텧
         }
         else
         {
             Debug.LogError("STOVE Failed");
             // 珥덇린???ㅽ뙣濡?寃뚯엫 醫낅즺
+            Application.Quit();
         }
     }
 

@@ -4,5 +4,6 @@
 	"AppSecret": "1cab9b1a59e6af40a75b4b33677f8a3591380fe59b32e59d1e0d9e71c01e3272de63bdbe820427750e17f486cde91f40",
 	"GameId": "GM-21C0-682EC12F_IND",
 	"LogLevel": 4,
-	"LogPath": "C:\Users\Profiler\Desktop\GamePrj\Project_Pistol\Logs"
+	"LogPath": "C:\Users\Profiler\Desktop\Master_Shooter_Trainer"
+
 }
