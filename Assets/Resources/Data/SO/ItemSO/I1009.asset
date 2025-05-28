@@ -16,7 +16,7 @@ MonoBehaviour:
   Name: "\uBAA8\uB4E0 \uB2A5\uB825\uCE58 \uC0C1\uC2B9"
   Description: "\uCE90\uB9AD\uD130\uC758 \uBAA8\uB4E0 \uB2A5\uB825\uCE58\uAC00 \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
   ApplicationTarget: 1
-  cost: 20
+  cost: 23
   RCL: 13
   HDL: 13
   STP: 13

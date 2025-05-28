@@ -32,6 +32,11 @@ public class ResultUI : MainUI
     {
         var bgm = Resources.Load<AudioClip>("Audio/BGM/The Chase Streets");
         SoundManager.Instance.PlayBackgroundMusic(bgm);
+        
+        if (RoomManager.Instance.CurStageIndex >= RoomManager.Instance.TotlaStageCount)
+        {
+            AchievementManager.Instance.SpawnAchivement("A0005");
+        }
     }
 
     public override void SetActiveUI(MainUIType activeUIType)
@@ -76,21 +81,24 @@ public class ResultUI : MainUI
                 break;
             case < 275000:
                 rank = RankType.S;
+                AchievementManager.Instance.SpawnAchivement("A0008");
                 break;
             case < 290000:
                 rank = RankType.SS;
+                AchievementManager.Instance.SpawnAchivement("A0009");
                 break;
             case < 299999:
                 rank = RankType.SSS;
+                AchievementManager.Instance.SpawnAchivement("A0010");
                 break;
             default:
                 rank = RankType.SSSS;
+                AchievementManager.Instance.SpawnAchivement("A0011");
                 break;
         }
         
         rankText.text = rank.ToString();
         scoreText.text = $"<size=30>Score</size>\n<size=40>{score:D6}</size>";
-
         remainTimeText.text = $"남은 시간\n{remainTime:N2}초";
         accuracyText.text = $"명중률\n{accuracy:N2}%";
         headAccuracyText.text = $"헤드 명중률\n{headAccuracy:N2}%";

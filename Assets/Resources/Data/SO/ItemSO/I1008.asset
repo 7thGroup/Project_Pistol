@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: I1008
   m_EditorClassIdentifier: 
   ID: I1008
-  Name: "\uC774\uB3D9 \uC18D\uB3C4 \uB300\uD3ED \uC0C1\uC2B9"
-  Description: "SPD\uAC00 \uD06C\uAC8C \uC0C1\uC2B9\uD558\uC5EC \uC774\uB3D9 \uC2DC\uC758
-    \uC870\uC900 \uD754\uB4E4\uB9BC\uC774 \uC904\uC5B4\uB4ED\uB2C8\uB2E4."
+  Name: "\uC2A4\uD53C\uB4DC \uB300\uD3ED \uC0C1\uC2B9"
+  Description: "\uC2A4\uD53C\uB4DC\uAC00 \uD06C\uAC8C \uC0C1\uC2B9\uD558\uC5EC \uC774\uB3D9
+    \uC18D\uB3C4\uAC00 \uD06C\uAC8C \uB298\uC5B4\uB0A9\uB2C8\uB2E4."
   ApplicationTarget: 1
-  cost: 11
+  cost: 14
   RCL: 0
   HDL: 0
   STP: 0

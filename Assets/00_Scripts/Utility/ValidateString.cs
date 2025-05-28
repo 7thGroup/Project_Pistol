@@ -13,7 +13,9 @@ public static class ValidateString
         }
         else
         {
-            Debug.Log("아이디 유효하지 않음");
+            var ui = UIManager.Instance.OpenPopupUI<PopupNotice>();
+            ui.SetContentText("경고", $"아이디가 유효하지 않음\n\n최소 3자, 최대 20자여야 하며 문자 A-Z 및 a-z, 숫자, 기호 ., -, @, _만 지원", "취소", "확인");
+            
         }
     }
     
@@ -27,7 +29,8 @@ public static class ValidateString
         }
         else
         {
-            Debug.Log("비밀번호 유효하지 않음");
+            var ui = UIManager.Instance.OpenPopupUI<PopupNotice>();
+            ui.SetContentText("경고", $"비밀번호가 유효하지 않음\n\n최소 8자, 최대 30자이며 소문자 1자, 대문자 1자, 숫자 1자, 기호 1자 이상을 포함해야 합니다.", "취소", "확인");
         }
     }
 }

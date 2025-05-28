@@ -32,7 +32,7 @@ public abstract class Room : MonoBehaviour
 
     protected virtual void ExitRoom()
     {
-        exitGate.Door.Close();
+        //exitGate.Door.Close();
     }
 
     protected abstract void ResetRoom();

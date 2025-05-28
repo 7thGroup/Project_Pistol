@@ -16,13 +16,13 @@ MonoBehaviour:
   Name: "\uBCF4\uC815\uAE30 \uBD80\uCC29"
   Description: "\uBCF4\uC815\uAE30\uB97C \uBD80\uCC29\uD574 \uBC18\uB3D9\uC744 \uC904\uC785\uB2C8\uB2E4."
   ApplicationTarget: 2
-  cost: 7
+  cost: 9
   RCL: 0
   HDL: 0
   STP: 0
   SPD: 0
   DMG: 0
-  ShootRecoil: 10
+  ShootRecoil: -10
   MaxAmmo: 0
   WeaponParts: 4
   AppearanceRate: 1

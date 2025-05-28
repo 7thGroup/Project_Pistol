@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 0}
+  m_AnchoredPosition: {x: 30.2606, y: 0}
+  m_SizeDelta: {x: 100.2606, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &2368491467922200002
 CanvasRenderer:
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: STP
+  m_text: "\uC2A4\uD15D"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7849fc856e7b64816b7e665ca366b57f, type: 2}
   m_sharedMaterial: {fileID: 8484883436121945821, guid: 7849fc856e7b64816b7e665ca366b57f,
@@ -93,14 +93,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 26.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1510,8 +1510,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 0}
+  m_AnchoredPosition: {x: 30.2606, y: 0}
+  m_SizeDelta: {x: 100.2606, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &8277960814056618181
 CanvasRenderer:
@@ -1541,7 +1541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SPD
+  m_text: "\uC2A4\uD53C\uB4DC"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7849fc856e7b64816b7e665ca366b57f, type: 2}
   m_sharedMaterial: {fileID: 8484883436121945821, guid: 7849fc856e7b64816b7e665ca366b57f,
@@ -1569,14 +1569,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 26.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1994,7 +1994,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -197, y: 112}
+  m_AnchoredPosition: {x: -200, y: 112}
   m_SizeDelta: {x: 600, y: 300}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &2461859824369370223
@@ -2040,6 +2040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1583262489280000742}
   - component: {fileID: 6973197948436450645}
+  - component: {fileID: 7052509890958674645}
   m_Layer: 5
   m_Name: HUDUI
   m_TagString: Untagged
@@ -2082,12 +2083,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 5972110005524640061}
-  scorePrefab: {fileID: 7017232760399528194, guid: 6aded009a982643d28b44aa4b3028b17,
-    type: 3}
-  scorePosition: {fileID: 234188015260922308}
+  comboText: {fileID: 9169485656427183473}
+  spawnScoreItem: {fileID: 7052509890958674645}
   remainTimeText: {fileID: 1597163150782541842}
   curStageText: {fileID: 8420534593202856211}
-  comboText: {fileID: 9169485656427183473}
   stageIndex:
   - {fileID: 127169552370779714}
   - {fileID: 8160742852886565189}
@@ -2102,6 +2101,21 @@ MonoBehaviour:
   rclText: {fileID: 342727348912586591}
   stpGauge: {fileID: 6356779079452892924}
   stpText: {fileID: 5159599139172267704}
+--- !u!114 &7052509890958674645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092067149281073673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 234ddee17b0774e3299679f28f3cd1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scorePrefab: {fileID: 7017232760399528194, guid: 6aded009a982643d28b44aa4b3028b17,
+    type: 3}
+  scorePosition: {fileID: 234188015260922308}
 --- !u!1 &5128194880653494083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,8 +3037,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 0}
+  m_AnchoredPosition: {x: 30.2606, y: 0}
+  m_SizeDelta: {x: 100.2606, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &9069449859757695392
 CanvasRenderer:
@@ -3054,7 +3068,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RCL
+  m_text: "\uBC18\uB3D9 \uC81C\uC5B4"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7849fc856e7b64816b7e665ca366b57f, type: 2}
   m_sharedMaterial: {fileID: 8484883436121945821, guid: 7849fc856e7b64816b7e665ca366b57f,
@@ -3082,14 +3096,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 26.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3665,8 +3679,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 70, y: 0}
+  m_AnchoredPosition: {x: 30.2606, y: 0}
+  m_SizeDelta: {x: 100.2606, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &2998053593459650383
 CanvasRenderer:
@@ -3696,7 +3710,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HDL
+  m_text: "\uD578\uB4E4\uB9C1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7849fc856e7b64816b7e665ca366b57f, type: 2}
   m_sharedMaterial: {fileID: 8484883436121945821, guid: 7849fc856e7b64816b7e665ca366b57f,
@@ -3724,14 +3738,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 26.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0

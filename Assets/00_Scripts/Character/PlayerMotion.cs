@@ -83,8 +83,11 @@ public class PlayerMotion : MonoBehaviour
         float weaponRecoil = player.Weapon.Stat.Recoil;
         float recoil = weaponRecoil * controlFactor;
 
+        Debug.Log($"{recoil},{weaponRecoil},{controlFactor}");
         StopCoroutine("SmoothRecoil"); // 이전 코루틴 중복 방지
         StartCoroutine(SmoothRecoil(recoil));
+
+        
     }
 
     private IEnumerator SmoothRecoil(float amount)

@@ -6,6 +6,14 @@ public class AerialTarget : BaseTarget
     private Rigidbody rb;
     [SerializeField] private GameObject targetObj;
     [SerializeField] private Transform targetPoint;
+    
+    private DroneMovement droneMovement;
+
+    private void Awake()
+    {
+        droneMovement = GetComponent<DroneMovement>();
+        droneMovement.enabled = false;
+    }
 
     protected override void Start()
     {
@@ -19,6 +27,11 @@ public class AerialTarget : BaseTarget
 
         rb.useGravity = false;
         rb.isKinematic = true;
+    }
+
+    private void OnDisable()
+    {
+        droneMovement.enabled = false;
     }
 
     public override void TakeDamage(float amount, Collider hitCollider, Vector3 hitDirection)
@@ -61,7 +74,7 @@ public class AerialTarget : BaseTarget
         int comboScore = (int)ComboScore(StageManager.Instance.DestroyTargetCombo);
         int quickShotScore = (int)QuickShotScore(StageManager.Instance.IsQuickShot);
         
-        hudUI?.ShowScoreEffect(false, headShotScore, comboScore, quickShotScore, (int)RangeScore());
+        hudUI?.spawnScoreItem.ShowScoreEffect(false, headShotScore, comboScore, quickShotScore, (int)RangeScore());
         
         StageManager.Instance.IsQuickShot = true;
         StageManager.Instance.QuickShotTimer = 0f;
@@ -105,6 +118,8 @@ public class AerialTarget : BaseTarget
 
         targetObj.transform.position = targetPoint.position;
         targetObj.transform.rotation = targetPoint.rotation;
+        
+        droneMovement.enabled = true;
     }
     
     private float BaseScore(bool isHeadShot, float dmg)

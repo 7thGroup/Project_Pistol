@@ -1,5 +1,8 @@
 using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using DataDeclaration;
+using Firebase.Firestore;
 using UnityEngine;
 
 public class StageManager : SingletonBehaviour<StageManager>
@@ -76,22 +79,71 @@ public class StageManager : SingletonBehaviour<StageManager>
        
     }
 
-    public void GameOver()
+    public async void GameOver()
     {
-        UIManager.ToggleMouseCursor(true);
-
-        UIManager.Instance.InitMainUI<ResultUI>();
-        var resultUI = UIManager.Instance.CurMainUI as ResultUI;
-        if (resultUI != null)
+        try
         {
-            shotAccuracy = ShotCount == 0 ? 0 : (float)HitCount / ShotCount * 100f;
-            headShotAccuracy = HitCount == 0 ? 0 : (float)HeadHitCount / HitCount * 100f;
-            
-            resultUI.SetResultValue(GameScore, RemainTime,
-                shotAccuracy, headShotAccuracy, MaxDestroyTargetCombo);
-            GameManager.Instance.gold += GameScore / 1000;
+            UIManager.ToggleMouseCursor(true);
+
+            UIManager.Instance.InitMainUI<ResultUI>();
+            var resultUI = UIManager.Instance.CurMainUI as ResultUI;
+            if (resultUI != null)
+            {
+                shotAccuracy = ShotCount == 0 ? 0 : (float)HitCount / ShotCount * 100f;
+                headShotAccuracy = HitCount == 0 ? 0 : (float)HeadHitCount / HitCount * 100f;
+
+                resultUI.SetResultValue(GameScore, RemainTime,
+                    shotAccuracy, headShotAccuracy, MaxDestroyTargetCombo);
+                    GameManager.Instance.gold += GameScore / 1000;
+            }
+            Player.Controller.enabled = false;
+
+            await CheckBestScore();
         }
-        Player.Controller.enabled = false;
+        catch (Exception e)
+        {
+            Debug.LogError($"에러 발생: {e.Message}");
+        }
+    }
+
+    private async Task CheckBestScore()
+    {
+        var docRef = FirebaseManager.Instance.DB
+            .Collection("users")
+            .Document(FirebaseManager.Instance.User.UserId)
+            .Collection("rank")
+            .Document("data");
+        
+        var snapshot = await docRef.GetSnapshotAsync();
+        
+        if (snapshot.Exists && snapshot.ContainsField("BestScore"))
+        {
+            var bestScore = snapshot.GetValue<int>("BestScore");
+            
+            if (bestScore < gameScore)
+            {
+                await FirebaseManager.Instance.DB
+                    .Collection("users")
+                    .Document(FirebaseManager.Instance.User.UserId)
+                    .Collection("rank")
+                    .Document("data").UpdateAsync("BestScore", gameScore);
+
+                var task = await FirebaseManager.Instance.DB.Collection("users").Document(FirebaseManager.Instance.User.UserId).GetSnapshotAsync();
+                var name = task.GetValue<string>("UserName");
+                var userRankData = new UserRankData()
+                {
+                    UserName = name,
+                    BestScore = gameScore,
+                    Character = GameManager.Instance.selectedCharacter.ID,
+                    Weapon = GameManager.Instance.selectedWeapon.ID
+                };
+                await FirebaseManager.Instance.DB.Collection("users").Document(FirebaseManager.Instance.User.UserId).Collection("rank").Document("data").SetAsync(userRankData);
+            }
+        }
+        else
+        {
+            Debug.Log("BestScore 필드가 존재하지 않음");
+        }
     }
 
     /// <summary>

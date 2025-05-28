@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: I1002
   Name: "\uBC18\uB3D9 \uC81C\uC5B4 \uB300\uD3ED \uC0C1\uC2B9"
-  Description: "RCL\uC774 \uD06C\uAC8C \uC0C1\uC2B9\uD558\uC5EC \uBC18\uB3D9\uC774
-    \uC904\uC5B4\uB4ED\uB2C8\uB2E4."
+  Description: "\uBC18\uB3D9 \uC81C\uC5B4 \uB2A5\uB825\uC774 \uD06C\uAC8C \uC0C1\uC2B9\uD558\uC5EC
+    \uBC18\uB3D9\uC774 \uC904\uC5B4\uB4ED\uB2C8\uB2E4."
   ApplicationTarget: 1
-  cost: 11
+  cost: 14
   RCL: 20
   HDL: 0
   STP: 0

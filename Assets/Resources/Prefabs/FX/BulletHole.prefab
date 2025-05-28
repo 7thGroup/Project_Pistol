@@ -9510,6 +9510,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b31becc938ddf49c3bb4966108518937, type: 3}
   - {fileID: 8300000, guid: fb3d4a28eb86645718418877d96f90bb, type: 3}
   - {fileID: 8300000, guid: 1eb457e0f70794fe6afe1e1bcf3518d7, type: 3}
+  bulletImpactToWoodSFX: []
   bulletImpactToMetalSFX:
   - {fileID: 8300000, guid: 8bc8c5a38b3f34ee098f1a034925b5db, type: 3}
   - {fileID: 8300000, guid: 8bc8c5a38b3f34ee098f1a034925b5db, type: 3}

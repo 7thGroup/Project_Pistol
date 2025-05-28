@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using DataDeclaration;
 using TMPro;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,14 +8,14 @@ public class HUDUI : MainUI
 {
     #region UI Object
 
+    [Header("스코어 관련")]
     [SerializeField] private TextMeshProUGUI scoreText;
-    [SerializeField] private GameObject scorePrefab;
-    [SerializeField] private Transform scorePosition;
+    [SerializeField] private TextMeshProUGUI comboText;
+    [SerializeField] public SpawnScoreItem spawnScoreItem;
+
     [SerializeField] private TextMeshProUGUI remainTimeText;
     [SerializeField] private TextMeshProUGUI curStageText;
-    [SerializeField]
-    private TextMeshProUGUI comboText
-    ;
+
     [SerializeField] private Image[] stageIndex;
     [Space][SerializeField] private Image equipImage;
     [SerializeField] private TextMeshProUGUI ammoText;
@@ -29,6 +27,7 @@ public class HUDUI : MainUI
     [SerializeField] private TextMeshProUGUI rclText;
     [SerializeField] private Image stpGauge;
     [SerializeField] private TextMeshProUGUI stpText;
+
 
     #endregion
 
@@ -78,6 +77,10 @@ public class HUDUI : MainUI
         remainTimeText.text = $"<size=120>{StageManager.Instance.RemainTime:N2}</size>";
         ammoText.text = $"{StageManager.Instance.Player.Weapon.CurAmmo} / {StageManager.Instance.Player.Weapon.MaxAmmo}";
         comboText.text = $"<size=36>Combo</size>\n<size=80>{StageManager.Instance.DestroyTargetCombo}</size>";
+        if (StageManager.Instance.DestroyTargetCombo >= 10)
+        {
+            AchievementManager.Instance.SpawnAchivement("A0012");
+        }
     }
 
     /// <summary>
@@ -102,59 +105,6 @@ public class HUDUI : MainUI
     }
 
     /// <summary>
-    /// 점수 올라갈때 Score 띄우는 메서드
-    /// </summary>
-    public void ShowScoreEffect(bool isHeadShot, int headShotScore, int comboScore, int quickShotScore, int rangeScore)
-    {
-        if (scorePrefab == null || scorePosition == null) return;
-
-        StartCoroutine(SpawnScoreTexts());
-
-        IEnumerator SpawnScoreTexts()
-        {
-            List<(string label, int score)> scoreItems = new();
-
-            string hitLabel = isHeadShot ? "Head Shot" : "Body Shot";
-            scoreItems.Add((hitLabel, headShotScore));
-
-            if (comboScore > 0)
-                scoreItems.Add(("Combo Bonus", comboScore));
-
-            if (quickShotScore > 0)
-                scoreItems.Add(("Quick Shot Bonus", quickShotScore));
-
-            if (rangeScore > 0)
-                scoreItems.Add(("Range Bonus", rangeScore));
-
-            foreach (var item in scoreItems)
-            {
-                CreateScoreText(item.label, item.score);
-                yield return new WaitForSeconds(0.2f);
-            }
-        }
-
-        void CreateScoreText(string label, int score)
-        {
-            var go = ObjectPoolManager.Instance.GetObject(scorePrefab, Vector3.zero, Quaternion.identity, 2f);
-            go.transform.SetParent(scorePosition, false);
-
-            go.transform.localRotation = Quaternion.identity;
-
-            var text = go.GetComponentInChildren<TextMeshProUGUI>();
-            if (text != null)
-            {
-                text.text = $"{label} +{score:0000}";
-            }
-        }
-    }
-
-
-
-
-
-
-
-    /// <summary>
     /// 캐릭터 스탯 UI 갱신 메서드
     /// </summary>
     public void UpdateStatValue()
@@ -163,15 +113,35 @@ public class HUDUI : MainUI
 
         rclGauge.fillAmount = stat.RCL / Constants.MAX_STAT;
         rclText.text = stat.RCL.ToString("N0");
-
+        if (stat.RCL >= 99)
+        {
+            Debug.Log("도전과제 달성: A0001 - RCL 99");
+            AchievementManager.Instance.SpawnAchivement("A0001");
+        }
         hdlGauge.fillAmount = stat.HDL / Constants.MAX_STAT;
         hdlText.text = stat.HDL.ToString("N0");
+        if (stat.HDL >= 99)
+        {
+            Debug.Log("도전과제 달성: A0002 - HDL 99");
+            AchievementManager.Instance.SpawnAchivement("A0002");
+        }
 
         stpGauge.fillAmount = stat.STP / Constants.MAX_STAT;
         stpText.text = stat.STP.ToString("N0");
+        if (stat.STP >= 99)
+        {
+            Debug.Log("도전과제 달성: A0003 - STP 99");
+            AchievementManager.Instance.SpawnAchivement("A0003");
+        }
 
         spdGauge.fillAmount = stat.SPD / Constants.MAX_STAT;
         spdText.text = stat.SPD.ToString("N0");
+         if (stat.SPD >= 99)
+        {
+            Debug.Log("도전과제 달성: A0003 - SPD 99");
+            AchievementManager.Instance.SpawnAchivement("A0003");
+        }
+
     }
 
     /// <summary>

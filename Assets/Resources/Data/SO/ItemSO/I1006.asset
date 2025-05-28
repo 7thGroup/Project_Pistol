@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: I1006
   Name: "\uC2A4\uD15D \uB300\uD3ED \uC0C1\uC2B9"
-  Description: "STP\uAC00 \uD06C\uAC8C \uC0C1\uC2B9\uD558\uC5EC \uC774\uB3D9 \uC2DC\uC758
-    \uC870\uC900 \uD754\uB4E4\uB9BC\uC774 \uC904\uC5B4\uB4ED\uB2C8\uB2E4."
+  Description: "\uC2A4\uD15D \uB2A5\uB825\uC774 \uD06C\uAC8C \uC0C1\uC2B9\uD558\uC5EC
+    \uBC1C\uAC78\uC74C\uC5D0 \uC758\uD55C \uC870\uC900 \uD754\uB4E4\uB9BC\uC774 \uD06C\uAC8C
+    \uC904\uC5B4\uB4ED\uB2C8\uB2E4."
   ApplicationTarget: 1
-  cost: 11
+  cost: 14
   RCL: 0
   HDL: 0
   STP: 20

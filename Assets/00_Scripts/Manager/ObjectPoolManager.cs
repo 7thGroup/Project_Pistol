@@ -36,6 +36,7 @@ public sealed class ObjectPoolManager : SingletonBehaviour<ObjectPoolManager>
         }
 
         obj.transform.SetPositionAndRotation(position, rotation);
+        obj.transform.localScale = key.transform.localScale;
         obj.SetActive(true);
 
         if (obj.TryGetComponent<IPoolable>(out var poolable))

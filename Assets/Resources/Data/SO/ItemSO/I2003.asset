@@ -17,7 +17,7 @@ MonoBehaviour:
   Description: "\uC870\uC900\uACBD\uC744 \uBD80\uCC29\uD558\uC5EC \uC815\uC870\uC900
     \uC2DC \uB808\uB4DC \uB3C4\uD2B8 \uC870\uC900\uC810\uC744 \uBCFC \uC218 \uC788\uC2B5\uB2C8\uB2E4."
   ApplicationTarget: 2
-  cost: 7
+  cost: 9
   RCL: 0
   HDL: 0
   STP: 0

@@ -24,8 +24,12 @@ public class LandTarget : BaseTarget
 
         float realDamage = Mathf.Min(amount, currentHp);
         currentHp -= realDamage;
-
         hpBar.fillAmount = currentHp / data.Hp;
+
+        int baseScore = (int)BaseScore(isHeadShot, realDamage);
+        int comboScore = 0;
+        int quickShotScore = 0;
+        int rangeScore = 0;
 
         if (currentHp > 0)
         {
@@ -35,27 +39,30 @@ public class LandTarget : BaseTarget
         {
             StageManager.Instance.DestroyTargetCombo++;
             AnalyticsManager.Instance.roomCombo++;
+
             if (StageManager.Instance.MaxDestroyTargetCombo <= StageManager.Instance.DestroyTargetCombo)
             {
                 StageManager.Instance.MaxDestroyTargetCombo = StageManager.Instance.DestroyTargetCombo;
             }
+
+            comboScore = (int)ComboScore(StageManager.Instance.DestroyTargetCombo);
+            quickShotScore = (int)QuickShotScore(StageManager.Instance.IsQuickShot);
+            rangeScore = (int)RangeScore();
+
             Die();
         }
 
-        int totalScore = (int)(BaseScore(isHeadShot, realDamage) + RangeScore() + ComboScore(StageManager.Instance.DestroyTargetCombo) + QuickShotScore(StageManager.Instance.IsQuickShot));
+        int totalScore = baseScore + comboScore + quickShotScore + rangeScore;
         StageManager.Instance.GameScore += totalScore;
         AnalyticsManager.Instance.roomScore += totalScore;
-        var hudUI = UIManager.Instance.GetMainUI<HUDUI>();
 
-        int headShotScore = (int)BaseScore(isHeadShot, realDamage);
-        int comboScore = (int)ComboScore(StageManager.Instance.DestroyTargetCombo);
-        int quickShotScore = (int)QuickShotScore(StageManager.Instance.IsQuickShot);
-        
-        hudUI?.ShowScoreEffect(isHeadShot, headShotScore, comboScore, quickShotScore, (int)RangeScore());
+        var hudUI = UIManager.Instance.GetMainUI<HUDUI>();
+        hudUI?.spawnScoreItem.ShowScoreEffect(isHeadShot, baseScore, comboScore, quickShotScore, rangeScore);
 
         StageManager.Instance.IsQuickShot = true;
         StageManager.Instance.QuickShotTimer = 0f;
     }
+
 
     private float BaseScore(bool isHeadShot, float dmg)
     {

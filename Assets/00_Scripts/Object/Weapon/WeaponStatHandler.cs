@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class WeaponStatHandler
 {
     private int weaponParts;
@@ -25,6 +27,7 @@ public class WeaponStatHandler
         Damage += dmg;
         Recoil += recoil;
         MaxAmmo += ammo;
+        Debug.Log($"[장착 후] 반동: {Recoil}");
         weaponParts |= (1 << partsValue);
     }
 

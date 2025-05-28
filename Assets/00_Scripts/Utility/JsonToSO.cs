@@ -29,5 +29,10 @@ public class JsonToSO : MonoBehaviour
     {
         ScriptableObjectCreator.CreateScriptableObjectAssetsFromJson<StageData>("Stage.json", typeof(StageSO));
     }
+    [MenuItem("Tools/JsonToSO/CreateAchievementSO")]
+    static void AchievementDataInit()
+    {
+        ScriptableObjectCreator.CreateScriptableObjectAssetsFromJson<AchievementData>("Achievement.json", typeof(AchievementSO));
+    }
 }
 #endif

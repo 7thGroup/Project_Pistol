@@ -1,7 +1,8 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Animations;
 
-public class BulletImpactSound : MonoBehaviour
+public class BulletImpactSound : MonoBehaviour ,IPoolable
 {
     //TODO: 재질 별로 소리 다르게
     [SerializeField] private AudioClip[] bulletImpactSFX;
@@ -11,10 +12,12 @@ public class BulletImpactSound : MonoBehaviour
     [SerializeField] private AudioClip[] bulletImpactToSandSFX;
     [SerializeField] private GameObject pooledAudioPrefab;
 
-    private void OnEnable()
+
+    public void OnGetFromPool()
     {
         Invoke(nameof(PlayRandomImpactSound), 0.1f);
     }
+    public void OnReturnToPool() { }
 
     private void PlayRandomImpactSound()
     {

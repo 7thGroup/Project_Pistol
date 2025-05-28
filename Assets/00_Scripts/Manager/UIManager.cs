@@ -81,6 +81,37 @@ public sealed class UIManager : SingletonBehaviour<UIManager>
     }
 
     /// <summary>
+    /// 같은 타입의 Popup UI를 중복으로 띄울 수 있는 메서드 (새 인스턴스 생성)
+    /// </summary>
+    /// <typeparam name="T">PopupUI 클래스</typeparam>
+    public T OpenPopUpUIMultiple<T>() where T : PopupUI
+    {
+        string key = typeof(T).Name;
+        T popup = null;
+
+        // 비활성화된 팝업이 있다면 재사용
+        if (popupUIPool.TryGetValue(key, out var pooledUI) && pooledUI != null)
+        {
+            popup = pooledUI as T;
+            popupUIPool.Remove(key);//재사용 했으면 풀에서 제거
+        }
+
+        if (popup == null)
+        {
+            var resource = ResourceManager.Instance.Load<T>($"Prefabs/UI/PopUp/{key}");
+            popup = Instantiate(resource, popupCanvas.transform, false);
+
+        }
+
+        popup.gameObject.SetActive(true);
+        popup.transform.SetAsLastSibling();
+        curPopupUIStack.Push(popup);
+
+        return popup;
+    }
+
+
+    /// <summary>
     /// Popup 창 닫기
     /// </summary>
     public void ClosePopUpUI()
@@ -96,6 +127,45 @@ public sealed class UIManager : SingletonBehaviour<UIManager>
 
         var key = curPopup.GetType().Name;
         popupUIPool[key] = curPopup;
+    }
+
+    public void ClosePopUpUI(PopupUI targetPopup)
+    {
+        if (targetPopup == null || !targetPopup.gameObject.activeSelf)
+        {
+            Debug.LogWarning("ClosePopUpUI: 이미 닫혀 있거나 null임.");
+            return;
+        }
+
+        // Stack에서 제거
+        Stack<PopupUI> tempStack = new Stack<PopupUI>();
+        bool removed = false;
+
+        while (curPopupUIStack.Count > 0)
+        {
+            var popup = curPopupUIStack.Pop();
+            if (popup == targetPopup && !removed)
+            {
+                popup.gameObject.SetActive(false);
+                popupUIPool[popup.GetType().Name] = popup;
+                removed = true;
+            }
+            else
+            {
+                tempStack.Push(popup);
+            }
+        }
+
+        // 나머지 다시 복구
+        while (tempStack.Count > 0)
+        {
+            curPopupUIStack.Push(tempStack.Pop());
+        }
+
+        if (!removed)
+        {
+            Debug.LogWarning("ClosePopUpUI: 해당 팝업이 Stack에 없었음.");
+        }
     }
 
     #endregion

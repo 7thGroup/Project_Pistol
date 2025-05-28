@@ -15,6 +15,8 @@ public class ShootingRoom : Room
 
     public StageSO Data { get; set; }
 
+    private bool isNextRoomPlaced = false;
+
     protected override void Awake()
     {
         base.Awake();
@@ -56,7 +58,7 @@ public class ShootingRoom : Room
     protected override void ExitRoom()
     {
         base.ExitRoom();
-        AnalyticsManager.Instance.RoomDataFlush();  
+        AnalyticsManager.Instance.RoomDataFlush();
     }
     protected override void ResetRoom()
     {
@@ -65,7 +67,10 @@ public class ShootingRoom : Room
             activeWalls[i].SetActive(false);
         }
 
+        UnregisterAllTargetEvents();
+
         ReturnTargetToPool();
+        isNextRoomPlaced = false;
         StartCoroutine(DisableRoom(1f));
     }
 
@@ -127,7 +132,36 @@ public class ShootingRoom : Room
             var target = ObjectPoolManager.Instance.GetObject<BaseTarget>(prefab, targetPoints[respawnIndex].position,
                 targetPoints[respawnIndex].rotation);
             target.InitData(targetList[i]);
+            RegisterTargetEvents(target);
             curActiveTargets.Add(target);
+        }
+    }
+
+    private void RegisterTargetEvents(BaseTarget target)
+    {
+        target.OnTargetDisabled += OnTargetDisabled;
+    }
+
+    private void UnregisterAllTargetEvents()
+    {
+        foreach (var target in curActiveTargets)
+        {
+            target.OnTargetDisabled -= OnTargetDisabled;
+        }
+    }
+    private void OnTargetDisabled(BaseTarget target)
+    {
+        if (isNextRoomPlaced) return;
+
+
+        int aliveCount = curActiveTargets
+            .Where(t => t != null && t.gameObject != null && t.gameObject.activeSelf)
+            .Count();
+
+        if (aliveCount <= 1)
+        {
+            RoomManager.Instance.PlaceNextRoom();
+            isNextRoomPlaced = true;
         }
     }
 
