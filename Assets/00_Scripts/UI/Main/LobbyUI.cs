@@ -10,7 +10,7 @@ public class LobbyUI : MainUI
     private string characterText2;
     private string characterText3;
     private Button startBtn;//테스트
-    
+ 
     private void Awake()
     {
         UIType = MainUIType.Lobby;

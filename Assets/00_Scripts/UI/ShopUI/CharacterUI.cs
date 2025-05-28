@@ -33,11 +33,11 @@ public class CharacterUI : MonoBehaviour
     {
         Debug.Log($"구매: {data.name}");
 
-        if (GameManager.Instance.gold >= data.Cost)
+        if (ShopManager.Instance.gold >= data.Cost)
         {
-            GameManager.Instance.gold -= data.Cost;
-            GameManager.Instance.Shop.goldText.text = "Gold: " + GameManager.Instance.gold;
-            GameManager.Instance.Shop.characterItem.Add(data);
+            ShopManager.Instance.gold -= data.Cost;
+            ShopManager.Instance.goldText.text = "Gold: " + ShopManager.Instance.gold;
+            ShopManager.Instance.characterItem.Add(data);
             Destroy(gameObject);
         }
         else
