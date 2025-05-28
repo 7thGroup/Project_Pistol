@@ -1463,6 +1463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1058f757b72d08349ab7939cfb37b797, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOpen: 0
   characterItem: []
   characterUIs: []
   characterPrefab: []
@@ -1473,7 +1474,10 @@ MonoBehaviour:
   itemParent: {fileID: 0}
   canvas: {fileID: 5017296143559058987}
   c0004Prefab: {fileID: 0}
-  spawnPosition: {fileID: 0}
+  c0005Prefab: {fileID: 0}
+  spawnPosition4: {fileID: 0}
+  spawnPosition5: {fileID: 0}
+  gold: 3000
 --- !u!1 &2050259644098532115
 GameObject:
   m_ObjectHideFlags: 0
@@ -3189,7 +3193,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5017296143559058987}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.35, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0

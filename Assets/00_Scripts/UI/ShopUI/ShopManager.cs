@@ -25,14 +25,13 @@ public class ShopManager : SingletonBehaviour<ShopManager>
     public Transform spawnPosition4; // 생성할 위치
     public Transform spawnPosition5; // 생성할 위치
     public int gold;
-    bool isC0004 = false;
-    bool isC0005 = false;
+  
 
    
     protected override void Awake()
     {
         base.Awake();
-        gold = 1000;
+        gold = 1500;  // 기본
         goldText.text = "Gold: " + gold;
     }
 
@@ -65,12 +64,16 @@ public class ShopManager : SingletonBehaviour<ShopManager>
         Debug.Log(character.name);
         if (character.name.Equals("C0004"))
         {
-            Instantiate(c0004Prefab, spawnPosition4.position, spawnPosition4.rotation);
+            Vector3 position = new Vector3(-1f, -1.4f, 1.5f);
+            Quaternion rotation = Quaternion.Euler(0f, 180, 0f);
+            Instantiate(c0004Prefab, position, rotation);
            
         }
         if (character.name.Equals("C0005"))
         {
-            Instantiate(c0005Prefab, spawnPosition5.position, spawnPosition5.rotation);
+            Vector3 position = new Vector3(2.5f, -1.4f, 1.5f);
+            Quaternion rotation = Quaternion.Euler(0f,180f, 0f);
+            Instantiate(c0005Prefab, position, rotation);
             
         }
     }
