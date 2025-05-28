@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening.Plugins.Options;
 using UnityEngine;
-
+using System.Collections.Generic;
 public class PlayerMotion : MonoBehaviour
 {
     private Player player;

@@ -1,0 +1,1410 @@
+﻿2025-05-27 19:52:12.880 NONE  [27520] <<<<< ---------------- StoveSDK Module Load ---------------- >>>>>
+2025-05-27 19:52:12.881 INFO  [27520] 
+2025-05-27 19:52:12.881 NONE  [27520] --> StovePC_Init
+2025-05-27 19:52:12.881 NONE  [27520]     checking input config value...
+2025-05-27 19:52:12.881 NONE  [27520]     config value checking successful
+2025-05-27 19:52:12.881 NONE  [27520]     checking log...
+2025-05-27 19:52:12.881 NONE  [27520] ---------------------------------------------
+2025-05-27 19:52:12.881 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 19:52:12.881 NONE  [27520] Game Env : live
+2025-05-27 19:52:12.881 NONE  [27520] Game LogLevel : 4
+2025-05-27 19:52:12.881 NONE  [27520] Game LogPath : 
+2025-05-27 19:52:12.881 NONE  [27520] ---------------------------------------------
+2025-05-27 19:52:12.881 NONE  [27520]     core instance creation in progress...
+2025-05-27 19:52:12.882 DEBUG [27520]     osLanguage : ko
+2025-05-27 19:52:12.882 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 19:52:12.882 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 19:52:12.882 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : -projectpath
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : -useHub
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : production
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : -accessToken
+2025-05-27 19:52:12.882 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 19:52:12.882 DEBUG [27520]     init tasks
+2025-05-27 19:52:12.882 DEBUG [27520]     transactionId : 72079be6-a32f-46af-8724-697c14cdcd40
+2025-05-27 19:52:12.883 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 19:52:12.883 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 19:52:12.883 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 19:52:12.883 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 19:52:12.883 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 19:52:12.883 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 19:52:12.883 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 19:52:12.916 INFO  [27520]     protocol data from ipc
+2025-05-27 19:52:12.916 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 19:52:12.916 ERROR [27520]     Init sgup task error
+2025-05-27 19:52:12.916 ERROR [27520]     init tasks - error
+2025-05-27 19:52:12.916 DEBUG [27520]     tasks UnInit error
+2025-05-27 19:52:12.917 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T19:52:12","client_timestamp":"1748343132917","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"72079be6-a32f-46af-8724-697c14cdcd40","uuid":""}
+2025-05-27 19:52:12.917 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 19:52:12.917 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 19:52:12.943 DEBUG [21904]     -StoveLog rest: response is 200
+2025-05-27 19:52:12.943 DEBUG [21904]      -  Send remote log success.
+2025-05-27 19:52:12.943 DEBUG [2692]     -StoveLog rest: response is 200
+2025-05-27 19:52:12.943 DEBUG [2692]      -  Send remote log success.
+2025-05-27 19:57:58.350 INFO  [27520] --> StovePC_UnInit
+2025-05-27 19:57:58.350 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T19:57:58","client_timestamp":"1748343478350","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"72079be6-a32f-46af-8724-697c14cdcd40","uuid":""}
+2025-05-27 19:57:58.350 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 19:57:58.351 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T19:57:58","client_timestamp":"1748343478351","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"72079be6-a32f-46af-8724-697c14cdcd40","uuid":""}
+2025-05-27 19:57:58.352 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 19:57:58.352 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 19:57:58.424 DEBUG [7592]     -StoveLog rest: response is 200
+2025-05-27 19:57:58.424 DEBUG [7592]      -  Send remote log success.
+2025-05-27 19:57:58.424 DEBUG [15748]     -StoveLog rest: response is 200
+2025-05-27 19:57:58.424 DEBUG [15748]      -  Send remote log success.
+2025-05-27 20:00:57.387 INFO  [27520] 
+2025-05-27 20:00:57.387 NONE  [27520] --> StovePC_Init
+2025-05-27 20:00:57.388 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:00:57","client_timestamp":"1748343657388","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"72079be6-a32f-46af-8724-697c14cdcd40","uuid":""}
+2025-05-27 20:00:57.388 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:00:57.388 NONE  [27520]     checking input config value...
+2025-05-27 20:00:57.388 NONE  [27520]     config value checking successful
+2025-05-27 20:00:57.388 NONE  [27520]     checking log...
+2025-05-27 20:00:57.388 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T19:57:58","client_timestamp":"1748343478351","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"72079be6-a32f-46af-8724-697c14cdcd40","uuid":""}
+2025-05-27 20:00:57.389 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:00:57.389 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:00:57.389 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:00:57.389 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:00:57.390 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:00:57.390 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:00:57.390 INFO  [27520] 
+2025-05-27 20:00:57.390 NONE  [27520] --> StovePC_Init
+2025-05-27 20:00:57.390 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:00:57","client_timestamp":"1748343657388","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"72079be6-a32f-46af-8724-697c14cdcd40","uuid":""}
+2025-05-27 20:00:57.390 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:00:57.390 NONE  [27520]     checking input config value...
+2025-05-27 20:00:57.390 NONE  [27520]     config value checking successful
+2025-05-27 20:00:57.390 NONE  [27520]     checking log...
+2025-05-27 20:00:57.390 NONE  [27520] ---------------------------------------------
+2025-05-27 20:00:57.390 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:00:57.390 NONE  [27520] Game Env : live
+2025-05-27 20:00:57.391 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:00:57.391 NONE  [27520] Game LogPath : 
+2025-05-27 20:00:57.391 NONE  [27520] ---------------------------------------------
+2025-05-27 20:00:57.391 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:00:57.391 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:00:57.391 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:00:57.391 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:00:57.391 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:00:57.391 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:00:57.391 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:00:57.391 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:00:57.392 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:00:57.392 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:00:57.392 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:00:57.392 DEBUG [27520]     commandline : production
+2025-05-27 20:00:57.392 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:00:57.392 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:00:57.392 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:00:57.392 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:00:57.392 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:00:57.392 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:00:57.393 DEBUG [27520]     init tasks
+2025-05-27 20:00:57.393 DEBUG [27520]     transactionId : a975db7d-d6da-460e-8f3e-338cba9f921f
+2025-05-27 20:00:57.393 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:00:57.393 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:00:57.393 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:00:57.393 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:00:57.393 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:00:57.393 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:00:57.393 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:00:57.394 INFO  [27520]     protocol data from ipc
+2025-05-27 20:00:57.394 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:00:57.394 ERROR [27520]     Init sgup task error
+2025-05-27 20:00:57.394 ERROR [27520]     init tasks - error
+2025-05-27 20:00:57.394 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:00:57.395 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:00:57","client_timestamp":"1748343657394","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"a975db7d-d6da-460e-8f3e-338cba9f921f","uuid":""}
+2025-05-27 20:00:57.395 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:00:57.395 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:00:57.434 DEBUG [7592]     -StoveLog rest: response is 200
+2025-05-27 20:00:57.434 DEBUG [7592]      -  Send remote log success.
+2025-05-27 20:00:57.434 DEBUG [28448]     -StoveLog rest: response is 200
+2025-05-27 20:00:57.434 DEBUG [28448]      -  Send remote log success.
+2025-05-27 20:00:58.832 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:00:58.832 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:00:58","client_timestamp":"1748343658832","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"a975db7d-d6da-460e-8f3e-338cba9f921f","uuid":""}
+2025-05-27 20:00:58.832 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:00:58.832 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:00:58","client_timestamp":"1748343658832","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"a975db7d-d6da-460e-8f3e-338cba9f921f","uuid":""}
+2025-05-27 20:00:58.832 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:00:58.832 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:00:58.860 DEBUG [31788]     -StoveLog rest: response is 200
+2025-05-27 20:00:58.860 DEBUG [31788]      -  Send remote log success.
+2025-05-27 20:00:58.865 DEBUG [28528]     -StoveLog rest: response is 200
+2025-05-27 20:00:58.865 DEBUG [28528]      -  Send remote log success.
+2025-05-27 20:01:06.517 INFO  [27520] 
+2025-05-27 20:01:06.517 NONE  [27520] --> StovePC_Init
+2025-05-27 20:01:06.517 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:01:06","client_timestamp":"1748343666517","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"a975db7d-d6da-460e-8f3e-338cba9f921f","uuid":""}
+2025-05-27 20:01:06.517 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:01:06.517 NONE  [27520]     checking input config value...
+2025-05-27 20:01:06.517 NONE  [27520]     config value checking successful
+2025-05-27 20:01:06.517 NONE  [27520]     checking log...
+2025-05-27 20:01:06.517 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:00:58","client_timestamp":"1748343658832","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"a975db7d-d6da-460e-8f3e-338cba9f921f","uuid":""}
+2025-05-27 20:01:06.517 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:01:06.517 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:01:06.518 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:01:06.518 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:01:06.518 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:01:06.518 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:01:06.518 INFO  [27520] 
+2025-05-27 20:01:06.518 NONE  [27520] --> StovePC_Init
+2025-05-27 20:01:06.518 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:01:06","client_timestamp":"1748343666517","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"a975db7d-d6da-460e-8f3e-338cba9f921f","uuid":""}
+2025-05-27 20:01:06.518 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:01:06.518 NONE  [27520]     checking input config value...
+2025-05-27 20:01:06.518 NONE  [27520]     config value checking successful
+2025-05-27 20:01:06.518 NONE  [27520]     checking log...
+2025-05-27 20:01:06.518 NONE  [27520] ---------------------------------------------
+2025-05-27 20:01:06.518 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:01:06.518 NONE  [27520] Game Env : live
+2025-05-27 20:01:06.518 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:01:06.518 NONE  [27520] Game LogPath : 
+2025-05-27 20:01:06.518 NONE  [27520] ---------------------------------------------
+2025-05-27 20:01:06.518 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:01:06.518 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:01:06.518 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:01:06.518 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:01:06.518 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:01:06.518 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:01:06.518 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:01:06.518 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:01:06.518 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:01:06.518 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:01:06.518 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:01:06.518 DEBUG [27520]     commandline : production
+2025-05-27 20:01:06.518 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:01:06.518 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:01:06.518 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:01:06.519 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:01:06.519 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:01:06.519 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:01:06.519 DEBUG [27520]     init tasks
+2025-05-27 20:01:06.519 DEBUG [27520]     transactionId : b29771c9-1fc0-4379-97af-7494451c9f23
+2025-05-27 20:01:06.519 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:01:06.519 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:01:06.519 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:01:06.519 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:01:06.519 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:01:06.519 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:01:06.519 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:01:06.519 INFO  [27520]     protocol data from ipc
+2025-05-27 20:01:06.519 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:01:06.519 ERROR [27520]     Init sgup task error
+2025-05-27 20:01:06.519 ERROR [27520]     init tasks - error
+2025-05-27 20:01:06.519 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:01:06.520 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:01:06","client_timestamp":"1748343666519","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"b29771c9-1fc0-4379-97af-7494451c9f23","uuid":""}
+2025-05-27 20:01:06.520 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:01:06.520 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:01:06.547 DEBUG [31788]     -StoveLog rest: response is 200
+2025-05-27 20:01:06.547 DEBUG [31788]      -  Send remote log success.
+2025-05-27 20:01:06.548 DEBUG [7592]     -StoveLog rest: response is 200
+2025-05-27 20:01:06.548 DEBUG [7592]      -  Send remote log success.
+2025-05-27 20:01:24.432 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:01:24.432 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:01:24","client_timestamp":"1748343684432","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"b29771c9-1fc0-4379-97af-7494451c9f23","uuid":""}
+2025-05-27 20:01:24.432 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:01:24.432 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:01:24","client_timestamp":"1748343684432","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"b29771c9-1fc0-4379-97af-7494451c9f23","uuid":""}
+2025-05-27 20:01:24.432 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:01:24.432 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:01:24.480 DEBUG [7592]     -StoveLog rest: response is 200
+2025-05-27 20:01:24.480 DEBUG [7592]      -  Send remote log success.
+2025-05-27 20:01:24.481 DEBUG [31788]     -StoveLog rest: response is 200
+2025-05-27 20:01:24.481 DEBUG [31788]      -  Send remote log success.
+2025-05-27 20:03:04.288 INFO  [27520] 
+2025-05-27 20:03:04.288 NONE  [27520] --> StovePC_Init
+2025-05-27 20:03:04.288 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:03:04","client_timestamp":"1748343784288","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"b29771c9-1fc0-4379-97af-7494451c9f23","uuid":""}
+2025-05-27 20:03:04.288 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:03:04.288 NONE  [27520]     checking input config value...
+2025-05-27 20:03:04.288 NONE  [27520]     config value checking successful
+2025-05-27 20:03:04.289 NONE  [27520]     checking log...
+2025-05-27 20:03:04.289 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:01:24","client_timestamp":"1748343684432","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"b29771c9-1fc0-4379-97af-7494451c9f23","uuid":""}
+2025-05-27 20:03:04.289 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:03:04.289 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:03:04.289 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:03:04.289 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:03:04.289 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:03:04.289 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:03:04.289 INFO  [27520] 
+2025-05-27 20:03:04.289 NONE  [27520] --> StovePC_Init
+2025-05-27 20:03:04.289 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:03:04","client_timestamp":"1748343784288","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"b29771c9-1fc0-4379-97af-7494451c9f23","uuid":""}
+2025-05-27 20:03:04.289 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:03:04.289 NONE  [27520]     checking input config value...
+2025-05-27 20:03:04.289 NONE  [27520]     config value checking successful
+2025-05-27 20:03:04.289 NONE  [27520]     checking log...
+2025-05-27 20:03:04.289 NONE  [27520] ---------------------------------------------
+2025-05-27 20:03:04.289 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:03:04.289 NONE  [27520] Game Env : live
+2025-05-27 20:03:04.289 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:03:04.289 NONE  [27520] Game LogPath : 
+2025-05-27 20:03:04.289 NONE  [27520] ---------------------------------------------
+2025-05-27 20:03:04.289 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:03:04.289 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:03:04.289 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:03:04.289 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:03:04.289 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : production
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:03:04.290 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:03:04.290 DEBUG [27520]     init tasks
+2025-05-27 20:03:04.290 DEBUG [27520]     transactionId : ecb21a4f-f405-4cc7-b3f0-54504a080846
+2025-05-27 20:03:04.290 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:03:04.290 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:03:04.290 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:03:04.290 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:03:04.290 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:03:04.290 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:03:04.290 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:03:04.291 INFO  [27520]     protocol data from ipc
+2025-05-27 20:03:04.291 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:03:04.291 ERROR [27520]     Init sgup task error
+2025-05-27 20:03:04.291 ERROR [27520]     init tasks - error
+2025-05-27 20:03:04.291 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:03:04.291 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:03:04","client_timestamp":"1748343784291","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"ecb21a4f-f405-4cc7-b3f0-54504a080846","uuid":""}
+2025-05-27 20:03:04.291 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:03:04.291 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:03:04.360 DEBUG [31220]     -StoveLog rest: response is 200
+2025-05-27 20:03:04.360 DEBUG [31220]      -  Send remote log success.
+2025-05-27 20:03:04.360 DEBUG [31788]     -StoveLog rest: response is 200
+2025-05-27 20:03:04.360 DEBUG [31788]      -  Send remote log success.
+2025-05-27 20:03:07.477 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:03:07.477 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:03:07","client_timestamp":"1748343787477","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"ecb21a4f-f405-4cc7-b3f0-54504a080846","uuid":""}
+2025-05-27 20:03:07.477 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:03:07.477 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:03:07","client_timestamp":"1748343787477","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"ecb21a4f-f405-4cc7-b3f0-54504a080846","uuid":""}
+2025-05-27 20:03:07.477 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:03:07.477 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:03:07.518 DEBUG [31220]     -StoveLog rest: response is 200
+2025-05-27 20:03:07.518 DEBUG [31220]      -  Send remote log success.
+2025-05-27 20:03:07.519 DEBUG [31220]     -StoveLog rest: response is 200
+2025-05-27 20:03:07.519 DEBUG [31220]      -  Send remote log success.
+2025-05-27 20:07:06.409 INFO  [27520] 
+2025-05-27 20:07:06.411 NONE  [27520] --> StovePC_Init
+2025-05-27 20:07:06.414 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:07:06","client_timestamp":"1748344026413","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"ecb21a4f-f405-4cc7-b3f0-54504a080846","uuid":""}
+2025-05-27 20:07:06.414 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:07:06.418 NONE  [27520]     checking input config value...
+2025-05-27 20:07:06.418 NONE  [27520]     config value checking successful
+2025-05-27 20:07:06.418 NONE  [27520]     checking log...
+2025-05-27 20:07:06.418 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:03:07","client_timestamp":"1748343787477","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"ecb21a4f-f405-4cc7-b3f0-54504a080846","uuid":""}
+2025-05-27 20:07:06.418 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:07:06.418 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:07:06.418 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:07:06.418 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:07:06.418 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:07:06.418 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:07:06.418 INFO  [27520] 
+2025-05-27 20:07:06.418 NONE  [27520] --> StovePC_Init
+2025-05-27 20:07:06.418 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:07:06","client_timestamp":"1748344026413","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"ecb21a4f-f405-4cc7-b3f0-54504a080846","uuid":""}
+2025-05-27 20:07:06.418 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:07:06.418 NONE  [27520]     checking input config value...
+2025-05-27 20:07:06.418 NONE  [27520]     config value checking successful
+2025-05-27 20:07:06.418 NONE  [27520]     checking log...
+2025-05-27 20:07:06.418 NONE  [27520] ---------------------------------------------
+2025-05-27 20:07:06.418 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:07:06.418 NONE  [27520] Game Env : live
+2025-05-27 20:07:06.418 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:07:06.418 NONE  [27520] Game LogPath : 
+2025-05-27 20:07:06.418 NONE  [27520] ---------------------------------------------
+2025-05-27 20:07:06.418 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:07:06.419 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:07:06.419 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:07:06.419 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:07:06.419 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : production
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:07:06.419 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:07:06.420 DEBUG [27520]     init tasks
+2025-05-27 20:07:06.420 DEBUG [27520]     transactionId : 4454f6a2-544a-4cce-bcb8-34f68e13c595
+2025-05-27 20:07:06.420 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:07:06.420 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:07:06.420 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:07:06.420 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:07:06.420 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:07:06.420 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:07:06.420 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:07:06.421 INFO  [27520]     protocol data from ipc
+2025-05-27 20:07:06.422 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:07:06.422 ERROR [27520]     Init sgup task error
+2025-05-27 20:07:06.422 ERROR [27520]     init tasks - error
+2025-05-27 20:07:06.422 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:07:06.424 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:07:06","client_timestamp":"1748344026424","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"4454f6a2-544a-4cce-bcb8-34f68e13c595","uuid":""}
+2025-05-27 20:07:06.424 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:07:06.425 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:07:06.459 DEBUG [28448]     -StoveLog rest: response is 200
+2025-05-27 20:07:06.459 DEBUG [28448]      -  Send remote log success.
+2025-05-27 20:07:06.462 DEBUG [28448]     -StoveLog rest: response is 200
+2025-05-27 20:07:06.462 DEBUG [28448]      -  Send remote log success.
+2025-05-27 20:07:22.357 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:07:22.357 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:07:22","client_timestamp":"1748344042357","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"4454f6a2-544a-4cce-bcb8-34f68e13c595","uuid":""}
+2025-05-27 20:07:22.357 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:07:22.358 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:07:22","client_timestamp":"1748344042358","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"4454f6a2-544a-4cce-bcb8-34f68e13c595","uuid":""}
+2025-05-27 20:07:22.358 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:07:22.358 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:07:22.442 DEBUG [17860]     -StoveLog rest: response is 200
+2025-05-27 20:07:22.442 DEBUG [17860]      -  Send remote log success.
+2025-05-27 20:07:22.443 DEBUG [28448]     -StoveLog rest: response is 200
+2025-05-27 20:07:22.443 DEBUG [28448]      -  Send remote log success.
+2025-05-27 20:09:23.595 INFO  [27520] 
+2025-05-27 20:09:23.595 NONE  [27520] --> StovePC_Init
+2025-05-27 20:09:23.595 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:09:23","client_timestamp":"1748344163595","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"4454f6a2-544a-4cce-bcb8-34f68e13c595","uuid":""}
+2025-05-27 20:09:23.595 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:09:23.595 NONE  [27520]     checking input config value...
+2025-05-27 20:09:23.595 NONE  [27520]     config value checking successful
+2025-05-27 20:09:23.595 NONE  [27520]     checking log...
+2025-05-27 20:09:23.595 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:07:22","client_timestamp":"1748344042358","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"4454f6a2-544a-4cce-bcb8-34f68e13c595","uuid":""}
+2025-05-27 20:09:23.595 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:09:23.595 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:09:23.595 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:09:23.596 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:09:23.596 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:09:23.596 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:09:23.596 INFO  [27520] 
+2025-05-27 20:09:23.596 NONE  [27520] --> StovePC_Init
+2025-05-27 20:09:23.596 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:09:23","client_timestamp":"1748344163595","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"4454f6a2-544a-4cce-bcb8-34f68e13c595","uuid":""}
+2025-05-27 20:09:23.596 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:09:23.596 NONE  [27520]     checking input config value...
+2025-05-27 20:09:23.596 NONE  [27520]     config value checking successful
+2025-05-27 20:09:23.596 NONE  [27520]     checking log...
+2025-05-27 20:09:23.596 NONE  [27520] ---------------------------------------------
+2025-05-27 20:09:23.596 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:09:23.596 NONE  [27520] Game Env : live
+2025-05-27 20:09:23.596 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:09:23.596 NONE  [27520] Game LogPath : 
+2025-05-27 20:09:23.596 NONE  [27520] ---------------------------------------------
+2025-05-27 20:09:23.596 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:09:23.596 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:09:23.596 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:09:23.596 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:09:23.596 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:09:23.596 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:09:23.596 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:09:23.596 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:09:23.596 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:09:23.596 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:09:23.597 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:09:23.597 DEBUG [27520]     commandline : production
+2025-05-27 20:09:23.597 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:09:23.597 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:09:23.597 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:09:23.597 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:09:23.597 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:09:23.597 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:09:23.597 DEBUG [27520]     init tasks
+2025-05-27 20:09:23.597 DEBUG [27520]     transactionId : 1d426148-0f66-4231-b60e-bd14d34651c4
+2025-05-27 20:09:23.597 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:09:23.597 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:09:23.597 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:09:23.597 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:09:23.597 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:09:23.597 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:09:23.597 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:09:23.598 INFO  [27520]     protocol data from ipc
+2025-05-27 20:09:23.598 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:09:23.598 ERROR [27520]     Init sgup task error
+2025-05-27 20:09:23.598 ERROR [27520]     init tasks - error
+2025-05-27 20:09:23.598 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:09:23.598 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:09:23","client_timestamp":"1748344163598","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1d426148-0f66-4231-b60e-bd14d34651c4","uuid":""}
+2025-05-27 20:09:23.598 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:09:23.598 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:09:23.711 DEBUG [30760]     -StoveLog rest: response is 200
+2025-05-27 20:09:23.711 DEBUG [30760]      -  Send remote log success.
+2025-05-27 20:09:23.712 DEBUG [30760]     -StoveLog rest: response is 200
+2025-05-27 20:09:23.712 DEBUG [30760]      -  Send remote log success.
+2025-05-27 20:09:30.798 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:09:30.798 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:09:30","client_timestamp":"1748344170798","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1d426148-0f66-4231-b60e-bd14d34651c4","uuid":""}
+2025-05-27 20:09:30.798 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:09:30.798 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:09:30","client_timestamp":"1748344170798","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1d426148-0f66-4231-b60e-bd14d34651c4","uuid":""}
+2025-05-27 20:09:30.798 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:09:30.798 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:09:30.828 DEBUG [9672]     -StoveLog rest: response is 200
+2025-05-27 20:09:30.828 DEBUG [9672]      -  Send remote log success.
+2025-05-27 20:09:30.828 DEBUG [31528]     -StoveLog rest: response is 200
+2025-05-27 20:09:30.829 DEBUG [31528]      -  Send remote log success.
+2025-05-27 20:09:42.003 INFO  [27520] 
+2025-05-27 20:09:42.003 NONE  [27520] --> StovePC_Init
+2025-05-27 20:09:42.003 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"\"\"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:09:42","client_timestamp":"1748344182003","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1d426148-0f66-4231-b60e-bd14d34651c4","uuid":""}
+2025-05-27 20:09:42.003 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:09:42.003 NONE  [27520]     checking input config value...
+2025-05-27 20:09:42.003 NONE  [27520]     config value checking successful
+2025-05-27 20:09:42.003 NONE  [27520]     checking log...
+2025-05-27 20:09:42.004 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"invalid log path","error_type":"53"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:09:42","client_timestamp":"1748344182004","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1d426148-0f66-4231-b60e-bd14d34651c4","uuid":""}
+2025-05-27 20:09:42.004 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:09:42.004 ERROR [27520] invalid log path
+2025-05-27 20:09:42.065 DEBUG [31788]     -StoveLog rest: response is 200
+2025-05-27 20:09:42.065 DEBUG [31788]      -  Send remote log success.
+2025-05-27 20:09:42.076 DEBUG [9672]     -StoveLog rest: response is 200
+2025-05-27 20:09:42.076 DEBUG [9672]      -  Send remote log success.
+2025-05-27 20:09:46.151 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:09:46.151 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:09:46","client_timestamp":"1748344186151","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1d426148-0f66-4231-b60e-bd14d34651c4","uuid":""}
+2025-05-27 20:09:46.152 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:09:46.152 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:09:46","client_timestamp":"1748344186152","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1d426148-0f66-4231-b60e-bd14d34651c4","uuid":""}
+2025-05-27 20:09:46.152 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:09:46.152 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:09:46.180 DEBUG [30760]     -StoveLog rest: response is 200
+2025-05-27 20:09:46.180 DEBUG [30760]      -  Send remote log success.
+2025-05-27 20:09:46.182 DEBUG [9672]     -StoveLog rest: response is 200
+2025-05-27 20:09:46.182 DEBUG [9672]      -  Send remote log success.
+2025-05-27 20:33:27.668 INFO  [27520] 
+2025-05-27 20:33:27.671 NONE  [27520] --> StovePC_Init
+2025-05-27 20:33:27.674 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\Master_Shooter_Trainer","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:33:27","client_timestamp":"1748345607673","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1d426148-0f66-4231-b60e-bd14d34651c4","uuid":""}
+2025-05-27 20:33:27.674 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:33:27.678 NONE  [27520]     checking input config value...
+2025-05-27 20:33:27.678 NONE  [27520]     config value checking successful
+2025-05-27 20:33:27.678 NONE  [27520]     checking log...
+2025-05-27 20:33:27.678 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:09:46","client_timestamp":"1748344186152","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1d426148-0f66-4231-b60e-bd14d34651c4","uuid":""}
+2025-05-27 20:33:27.678 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:33:27.678 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:33:27.679 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:33:27.679 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:33:27.679 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:33:27.679 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:33:27.679 INFO  [27520] 
+2025-05-27 20:33:27.679 NONE  [27520] --> StovePC_Init
+2025-05-27 20:33:27.679 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\Master_Shooter_Trainer","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:33:27","client_timestamp":"1748345607673","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1d426148-0f66-4231-b60e-bd14d34651c4","uuid":""}
+2025-05-27 20:33:27.679 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:33:27.679 NONE  [27520]     checking input config value...
+2025-05-27 20:33:27.679 NONE  [27520]     config value checking successful
+2025-05-27 20:33:27.679 NONE  [27520]     checking log...
+2025-05-27 20:33:27.679 NONE  [27520] ---------------------------------------------
+2025-05-27 20:33:27.679 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:33:27.679 NONE  [27520] Game Env : live
+2025-05-27 20:33:27.679 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:33:27.679 NONE  [27520] Game LogPath : C:\Users\Profiler\Desktop\Master_Shooter_Trainer
+2025-05-27 20:33:27.679 NONE  [27520] ---------------------------------------------
+2025-05-27 20:33:27.679 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:33:27.680 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:33:27.680 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:33:27.680 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:33:27.680 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:33:27.680 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:33:27.680 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:33:27.680 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:33:27.680 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:33:27.680 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:33:27.680 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:33:27.680 DEBUG [27520]     commandline : production
+2025-05-27 20:33:27.680 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:33:27.681 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:33:27.681 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:33:27.681 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:33:27.681 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:33:27.681 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:33:27.681 DEBUG [27520]     init tasks
+2025-05-27 20:33:27.682 DEBUG [27520]     transactionId : d53a4c50-3b84-4740-9c7a-bb833cfb68b0
+2025-05-27 20:33:27.682 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:33:27.682 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:33:27.682 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:33:27.683 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:33:27.683 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:33:27.683 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:33:27.683 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:33:27.692 INFO  [27520]     protocol data from ipc
+2025-05-27 20:33:27.692 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:33:27.692 ERROR [27520]     Init sgup task error
+2025-05-27 20:33:27.692 ERROR [27520]     init tasks - error
+2025-05-27 20:33:27.692 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:33:27.695 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:33:27","client_timestamp":"1748345607695","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d53a4c50-3b84-4740-9c7a-bb833cfb68b0","uuid":""}
+2025-05-27 20:33:27.695 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:33:27.695 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:33:27.727 DEBUG [30108]     -StoveLog rest: response is 200
+2025-05-27 20:33:27.728 DEBUG [30108]      -  Send remote log success.
+2025-05-27 20:33:27.727 DEBUG [24052]     -StoveLog rest: response is 200
+2025-05-27 20:33:27.728 DEBUG [24052]      -  Send remote log success.
+2025-05-27 20:33:37.153 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:33:37.153 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:33:37","client_timestamp":"1748345617153","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d53a4c50-3b84-4740-9c7a-bb833cfb68b0","uuid":""}
+2025-05-27 20:33:37.153 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:33:37.154 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:33:37","client_timestamp":"1748345617154","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d53a4c50-3b84-4740-9c7a-bb833cfb68b0","uuid":""}
+2025-05-27 20:33:37.154 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:33:37.154 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:33:37.179 DEBUG [30108]     -StoveLog rest: response is 200
+2025-05-27 20:33:37.179 DEBUG [30108]      -  Send remote log success.
+2025-05-27 20:33:37.179 DEBUG [30108]     -StoveLog rest: response is 200
+2025-05-27 20:33:37.179 DEBUG [30108]      -  Send remote log success.
+2025-05-27 20:35:08.515 INFO  [27520] 
+2025-05-27 20:35:08.515 NONE  [27520] --> StovePC_Init
+2025-05-27 20:35:08.515 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\Master_Shooter_Trainer","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:35:08","client_timestamp":"1748345708515","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d53a4c50-3b84-4740-9c7a-bb833cfb68b0","uuid":""}
+2025-05-27 20:35:08.515 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:35:08.515 NONE  [27520]     checking input config value...
+2025-05-27 20:35:08.515 NONE  [27520]     config value checking successful
+2025-05-27 20:35:08.515 NONE  [27520]     checking log...
+2025-05-27 20:35:08.516 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:33:37","client_timestamp":"1748345617154","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d53a4c50-3b84-4740-9c7a-bb833cfb68b0","uuid":""}
+2025-05-27 20:35:08.516 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:35:08.516 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:35:08.516 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:35:08.516 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:35:08.516 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:35:08.516 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:35:08.516 INFO  [27520] 
+2025-05-27 20:35:08.516 NONE  [27520] --> StovePC_Init
+2025-05-27 20:35:08.516 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\Master_Shooter_Trainer","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:35:08","client_timestamp":"1748345708515","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d53a4c50-3b84-4740-9c7a-bb833cfb68b0","uuid":""}
+2025-05-27 20:35:08.516 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:35:08.516 NONE  [27520]     checking input config value...
+2025-05-27 20:35:08.516 NONE  [27520]     config value checking successful
+2025-05-27 20:35:08.516 NONE  [27520]     checking log...
+2025-05-27 20:35:08.516 NONE  [27520] ---------------------------------------------
+2025-05-27 20:35:08.516 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:35:08.516 NONE  [27520] Game Env : live
+2025-05-27 20:35:08.516 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:35:08.516 NONE  [27520] Game LogPath : C:\Users\Profiler\Desktop\Master_Shooter_Trainer
+2025-05-27 20:35:08.516 NONE  [27520] ---------------------------------------------
+2025-05-27 20:35:08.516 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:35:08.516 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:35:08.516 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:35:08.516 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:35:08.516 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : production
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:35:08.516 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:35:08.516 DEBUG [27520]     init tasks
+2025-05-27 20:35:08.516 DEBUG [27520]     transactionId : d140e8ee-e253-404c-a95f-b890a4cb0f3f
+2025-05-27 20:35:08.516 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:35:08.516 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:35:08.516 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:35:08.516 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:35:08.517 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:35:08.517 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:35:08.517 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:35:08.517 INFO  [27520]     protocol data from ipc
+2025-05-27 20:35:08.517 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:35:08.517 ERROR [27520]     Init sgup task error
+2025-05-27 20:35:08.517 ERROR [27520]     init tasks - error
+2025-05-27 20:35:08.517 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:35:08.517 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:35:08","client_timestamp":"1748345708517","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d140e8ee-e253-404c-a95f-b890a4cb0f3f","uuid":""}
+2025-05-27 20:35:08.517 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:35:08.517 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:35:08.557 DEBUG [24052]     -StoveLog rest: response is 200
+2025-05-27 20:35:08.557 DEBUG [24052]      -  Send remote log success.
+2025-05-27 20:35:08.557 DEBUG [33700]     -StoveLog rest: response is 200
+2025-05-27 20:35:08.557 DEBUG [33700]      -  Send remote log success.
+2025-05-27 20:35:15.715 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:35:15.715 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:35:15","client_timestamp":"1748345715715","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d140e8ee-e253-404c-a95f-b890a4cb0f3f","uuid":""}
+2025-05-27 20:35:15.715 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:35:15.715 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:35:15","client_timestamp":"1748345715715","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d140e8ee-e253-404c-a95f-b890a4cb0f3f","uuid":""}
+2025-05-27 20:35:15.715 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:35:15.715 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:35:15.741 DEBUG [30108]     -StoveLog rest: response is 200
+2025-05-27 20:35:15.741 DEBUG [30108]      -  Send remote log success.
+2025-05-27 20:35:15.742 DEBUG [30108]     -StoveLog rest: response is 200
+2025-05-27 20:35:15.742 DEBUG [30108]      -  Send remote log success.
+2025-05-27 20:36:21.710 INFO  [27520] 
+2025-05-27 20:36:21.710 NONE  [27520] --> StovePC_Init
+2025-05-27 20:36:21.711 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:36:21","client_timestamp":"1748345781711","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d140e8ee-e253-404c-a95f-b890a4cb0f3f","uuid":""}
+2025-05-27 20:36:21.711 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:36:21.711 NONE  [27520]     checking input config value...
+2025-05-27 20:36:21.711 NONE  [27520]     config value checking successful
+2025-05-27 20:36:21.711 NONE  [27520]     checking log...
+2025-05-27 20:36:21.711 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:35:15","client_timestamp":"1748345715715","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d140e8ee-e253-404c-a95f-b890a4cb0f3f","uuid":""}
+2025-05-27 20:36:21.711 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:36:21.711 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:36:21.711 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:36:21.711 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:36:21.711 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:36:21.712 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:36:21.712 INFO  [27520] 
+2025-05-27 20:36:21.712 NONE  [27520] --> StovePC_Init
+2025-05-27 20:36:21.712 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:36:21","client_timestamp":"1748345781711","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d140e8ee-e253-404c-a95f-b890a4cb0f3f","uuid":""}
+2025-05-27 20:36:21.712 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:36:21.712 NONE  [27520]     checking input config value...
+2025-05-27 20:36:21.712 NONE  [27520]     config value checking successful
+2025-05-27 20:36:21.712 NONE  [27520]     checking log...
+2025-05-27 20:36:21.712 NONE  [27520] ---------------------------------------------
+2025-05-27 20:36:21.712 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:36:21.712 NONE  [27520] Game Env : live
+2025-05-27 20:36:21.712 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:36:21.712 NONE  [27520] Game LogPath : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol\Logs
+2025-05-27 20:36:21.712 NONE  [27520] ---------------------------------------------
+2025-05-27 20:36:21.712 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:36:21.712 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:36:21.712 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:36:21.712 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:36:21.712 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : production
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:36:21.712 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:36:21.712 DEBUG [27520]     init tasks
+2025-05-27 20:36:21.712 DEBUG [27520]     transactionId : 75b912c5-0e9e-4f40-a65f-b0eaabe35393
+2025-05-27 20:36:21.712 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:36:21.712 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:36:21.712 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:36:21.712 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:36:21.712 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:36:21.712 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:36:21.712 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:36:21.713 INFO  [27520]     protocol data from ipc
+2025-05-27 20:36:21.713 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:36:21.713 ERROR [27520]     Init sgup task error
+2025-05-27 20:36:21.713 ERROR [27520]     init tasks - error
+2025-05-27 20:36:21.713 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:36:21.713 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:36:21","client_timestamp":"1748345781713","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"75b912c5-0e9e-4f40-a65f-b0eaabe35393","uuid":""}
+2025-05-27 20:36:21.713 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:36:21.713 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:36:21.745 DEBUG [30108]     -StoveLog rest: response is 200
+2025-05-27 20:36:21.746 DEBUG [30108]      -  Send remote log success.
+2025-05-27 20:36:21.747 DEBUG [30108]     -StoveLog rest: response is 200
+2025-05-27 20:36:21.747 DEBUG [30108]      -  Send remote log success.
+2025-05-27 20:36:30.352 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:36:30.352 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:36:30","client_timestamp":"1748345790352","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"75b912c5-0e9e-4f40-a65f-b0eaabe35393","uuid":""}
+2025-05-27 20:36:30.352 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:36:30.353 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:36:30","client_timestamp":"1748345790353","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"75b912c5-0e9e-4f40-a65f-b0eaabe35393","uuid":""}
+2025-05-27 20:36:30.353 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:36:30.353 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:36:30.377 DEBUG [33700]     -StoveLog rest: response is 200
+2025-05-27 20:36:30.377 DEBUG [33700]      -  Send remote log success.
+2025-05-27 20:36:30.378 DEBUG [13944]     -StoveLog rest: response is 200
+2025-05-27 20:36:30.378 DEBUG [13944]      -  Send remote log success.
+2025-05-27 20:37:09.645 INFO  [27520] 
+2025-05-27 20:37:09.645 NONE  [27520] --> StovePC_Init
+2025-05-27 20:37:09.645 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:37:09","client_timestamp":"1748345829645","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"75b912c5-0e9e-4f40-a65f-b0eaabe35393","uuid":""}
+2025-05-27 20:37:09.645 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:37:09.645 NONE  [27520]     checking input config value...
+2025-05-27 20:37:09.645 NONE  [27520]     config value checking successful
+2025-05-27 20:37:09.645 NONE  [27520]     checking log...
+2025-05-27 20:37:09.645 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:36:30","client_timestamp":"1748345790353","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"75b912c5-0e9e-4f40-a65f-b0eaabe35393","uuid":""}
+2025-05-27 20:37:09.645 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:37:09.645 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:37:09.645 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:37:09.645 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:37:09.645 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:37:09.645 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:37:09.645 INFO  [27520] 
+2025-05-27 20:37:09.645 NONE  [27520] --> StovePC_Init
+2025-05-27 20:37:09.645 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:37:09","client_timestamp":"1748345829645","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"75b912c5-0e9e-4f40-a65f-b0eaabe35393","uuid":""}
+2025-05-27 20:37:09.645 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:37:09.645 NONE  [27520]     checking input config value...
+2025-05-27 20:37:09.645 NONE  [27520]     config value checking successful
+2025-05-27 20:37:09.645 NONE  [27520]     checking log...
+2025-05-27 20:37:09.645 NONE  [27520] ---------------------------------------------
+2025-05-27 20:37:09.645 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:37:09.646 NONE  [27520] Game Env : live
+2025-05-27 20:37:09.646 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:37:09.646 NONE  [27520] Game LogPath : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol\Logs
+2025-05-27 20:37:09.646 NONE  [27520] ---------------------------------------------
+2025-05-27 20:37:09.646 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:37:09.646 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:37:09.646 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:37:09.646 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:37:09.646 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : production
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:37:09.646 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:37:09.646 DEBUG [27520]     init tasks
+2025-05-27 20:37:09.646 DEBUG [27520]     transactionId : d9cf0db0-a567-4c2a-b561-9d5974679ea9
+2025-05-27 20:37:09.646 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:37:09.646 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:37:09.646 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:37:09.646 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:37:09.646 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:37:09.646 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:37:09.646 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:37:09.647 INFO  [27520]     protocol data from ipc
+2025-05-27 20:37:09.647 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:37:09.647 ERROR [27520]     Init sgup task error
+2025-05-27 20:37:09.647 ERROR [27520]     init tasks - error
+2025-05-27 20:37:09.647 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:37:09.647 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:37:09","client_timestamp":"1748345829647","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d9cf0db0-a567-4c2a-b561-9d5974679ea9","uuid":""}
+2025-05-27 20:37:09.647 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:37:09.647 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:37:09.679 DEBUG [33700]     -StoveLog rest: response is 200
+2025-05-27 20:37:09.679 DEBUG [33700]      -  Send remote log success.
+2025-05-27 20:37:09.681 DEBUG [33700]     -StoveLog rest: response is 200
+2025-05-27 20:37:09.681 DEBUG [33700]      -  Send remote log success.
+2025-05-27 20:37:21.106 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:37:21.106 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:37:21","client_timestamp":"1748345841106","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d9cf0db0-a567-4c2a-b561-9d5974679ea9","uuid":""}
+2025-05-27 20:37:21.106 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:37:21.106 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:37:21","client_timestamp":"1748345841106","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d9cf0db0-a567-4c2a-b561-9d5974679ea9","uuid":""}
+2025-05-27 20:37:21.106 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:37:21.106 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:37:21.167 DEBUG [30108]     -StoveLog rest: response is 200
+2025-05-27 20:37:21.167 DEBUG [30108]      -  Send remote log success.
+2025-05-27 20:37:21.179 DEBUG [33700]     -StoveLog rest: response is 200
+2025-05-27 20:37:21.179 DEBUG [33700]      -  Send remote log success.
+2025-05-27 20:37:58.168 INFO  [27520] 
+2025-05-27 20:37:58.168 NONE  [27520] --> StovePC_Init
+2025-05-27 20:37:58.169 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:37:58","client_timestamp":"1748345878169","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d9cf0db0-a567-4c2a-b561-9d5974679ea9","uuid":""}
+2025-05-27 20:37:58.169 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:37:58.169 NONE  [27520]     checking input config value...
+2025-05-27 20:37:58.169 NONE  [27520]     config value checking successful
+2025-05-27 20:37:58.169 NONE  [27520]     checking log...
+2025-05-27 20:37:58.169 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:37:21","client_timestamp":"1748345841106","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d9cf0db0-a567-4c2a-b561-9d5974679ea9","uuid":""}
+2025-05-27 20:37:58.169 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:37:58.169 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:37:58.169 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:37:58.169 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:37:58.169 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:37:58.169 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:37:58.169 INFO  [27520] 
+2025-05-27 20:37:58.169 NONE  [27520] --> StovePC_Init
+2025-05-27 20:37:58.169 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:37:58","client_timestamp":"1748345878169","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"d9cf0db0-a567-4c2a-b561-9d5974679ea9","uuid":""}
+2025-05-27 20:37:58.169 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:37:58.169 NONE  [27520]     checking input config value...
+2025-05-27 20:37:58.169 NONE  [27520]     config value checking successful
+2025-05-27 20:37:58.169 NONE  [27520]     checking log...
+2025-05-27 20:37:58.169 NONE  [27520] ---------------------------------------------
+2025-05-27 20:37:58.169 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:37:58.169 NONE  [27520] Game Env : live
+2025-05-27 20:37:58.169 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:37:58.169 NONE  [27520] Game LogPath : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol\Logs
+2025-05-27 20:37:58.169 NONE  [27520] ---------------------------------------------
+2025-05-27 20:37:58.169 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:37:58.169 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:37:58.169 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:37:58.169 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:37:58.169 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:37:58.169 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:37:58.169 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:37:58.170 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:37:58.170 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:37:58.170 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:37:58.170 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:37:58.170 DEBUG [27520]     commandline : production
+2025-05-27 20:37:58.170 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:37:58.170 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:37:58.170 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:37:58.170 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:37:58.170 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:37:58.170 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:37:58.170 DEBUG [27520]     init tasks
+2025-05-27 20:37:58.170 DEBUG [27520]     transactionId : c2c4114d-c390-40de-9eb2-d7175e6ce629
+2025-05-27 20:37:58.170 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:37:58.170 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:37:58.170 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:37:58.170 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:37:58.170 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:37:58.170 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:37:58.170 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:37:58.171 INFO  [27520]     protocol data from ipc
+2025-05-27 20:37:58.171 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:37:58.171 ERROR [27520]     Init sgup task error
+2025-05-27 20:37:58.171 ERROR [27520]     init tasks - error
+2025-05-27 20:37:58.171 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:37:58.171 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:37:58","client_timestamp":"1748345878171","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"c2c4114d-c390-40de-9eb2-d7175e6ce629","uuid":""}
+2025-05-27 20:37:58.171 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:37:58.171 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:37:58.201 DEBUG [24052]     -StoveLog rest: response is 200
+2025-05-27 20:37:58.201 DEBUG [24052]      -  Send remote log success.
+2025-05-27 20:37:58.202 DEBUG [24052]     -StoveLog rest: response is 200
+2025-05-27 20:37:58.202 DEBUG [24052]      -  Send remote log success.
+2025-05-27 20:38:01.262 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:38:01.262 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:38:01","client_timestamp":"1748345881262","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"c2c4114d-c390-40de-9eb2-d7175e6ce629","uuid":""}
+2025-05-27 20:38:01.262 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:38:01.262 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:38:01","client_timestamp":"1748345881262","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"c2c4114d-c390-40de-9eb2-d7175e6ce629","uuid":""}
+2025-05-27 20:38:01.262 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:38:01.262 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:38:01.292 DEBUG [24052]     -StoveLog rest: response is 200
+2025-05-27 20:38:01.292 DEBUG [24052]      -  Send remote log success.
+2025-05-27 20:38:01.292 DEBUG [13944]     -StoveLog rest: response is 200
+2025-05-27 20:38:01.292 DEBUG [13944]      -  Send remote log success.
+2025-05-27 20:38:31.589 INFO  [27520] 
+2025-05-27 20:38:31.590 NONE  [27520] --> StovePC_Init
+2025-05-27 20:38:31.590 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:38:31","client_timestamp":"1748345911590","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"c2c4114d-c390-40de-9eb2-d7175e6ce629","uuid":""}
+2025-05-27 20:38:31.590 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:38:31.590 NONE  [27520]     checking input config value...
+2025-05-27 20:38:31.590 NONE  [27520]     config value checking successful
+2025-05-27 20:38:31.590 NONE  [27520]     checking log...
+2025-05-27 20:38:31.590 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:38:01","client_timestamp":"1748345881262","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"c2c4114d-c390-40de-9eb2-d7175e6ce629","uuid":""}
+2025-05-27 20:38:31.590 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:38:31.590 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:38:31.590 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:38:31.590 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:38:31.590 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:38:31.590 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:38:31.590 INFO  [27520] 
+2025-05-27 20:38:31.590 NONE  [27520] --> StovePC_Init
+2025-05-27 20:38:31.590 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:38:31","client_timestamp":"1748345911590","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"c2c4114d-c390-40de-9eb2-d7175e6ce629","uuid":""}
+2025-05-27 20:38:31.590 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:38:31.591 NONE  [27520]     checking input config value...
+2025-05-27 20:38:31.591 NONE  [27520]     config value checking successful
+2025-05-27 20:38:31.591 NONE  [27520]     checking log...
+2025-05-27 20:38:31.591 NONE  [27520] ---------------------------------------------
+2025-05-27 20:38:31.591 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:38:31.591 NONE  [27520] Game Env : live
+2025-05-27 20:38:31.591 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:38:31.591 NONE  [27520] Game LogPath : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol\Logs
+2025-05-27 20:38:31.591 NONE  [27520] ---------------------------------------------
+2025-05-27 20:38:31.591 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:38:31.591 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:38:31.591 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:38:31.591 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:38:31.591 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:38:31.591 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:38:31.591 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:38:31.591 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:38:31.591 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:38:31.592 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:38:31.592 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:38:31.592 DEBUG [27520]     commandline : production
+2025-05-27 20:38:31.592 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:38:31.592 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:38:31.592 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:38:31.592 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:38:31.592 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:38:31.592 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:38:31.592 DEBUG [27520]     init tasks
+2025-05-27 20:38:31.592 DEBUG [27520]     transactionId : 1ab40a42-4bbb-4868-bcf4-896f9ca7b375
+2025-05-27 20:38:31.592 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:38:31.592 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:38:31.592 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:38:31.592 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:38:31.592 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:38:31.592 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:38:31.592 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:38:31.593 INFO  [27520]     protocol data from ipc
+2025-05-27 20:38:31.593 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:38:31.593 ERROR [27520]     Init sgup task error
+2025-05-27 20:38:31.593 ERROR [27520]     init tasks - error
+2025-05-27 20:38:31.593 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:38:31.593 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:38:31","client_timestamp":"1748345911593","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab40a42-4bbb-4868-bcf4-896f9ca7b375","uuid":""}
+2025-05-27 20:38:31.593 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:38:31.593 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:38:31.646 DEBUG [13944]     -StoveLog rest: response is 200
+2025-05-27 20:38:31.646 DEBUG [13944]      -  Send remote log success.
+2025-05-27 20:38:31.647 DEBUG [24052]     -StoveLog rest: response is 200
+2025-05-27 20:38:31.647 DEBUG [24052]      -  Send remote log success.
+2025-05-27 20:38:34.670 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:38:34.670 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:38:34","client_timestamp":"1748345914670","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab40a42-4bbb-4868-bcf4-896f9ca7b375","uuid":""}
+2025-05-27 20:38:34.670 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:38:34.670 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:38:34","client_timestamp":"1748345914670","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab40a42-4bbb-4868-bcf4-896f9ca7b375","uuid":""}
+2025-05-27 20:38:34.670 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:38:34.670 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:38:34.698 DEBUG [24052]     -StoveLog rest: response is 200
+2025-05-27 20:38:34.698 DEBUG [24052]      -  Send remote log success.
+2025-05-27 20:38:34.698 DEBUG [32812]     -StoveLog rest: response is 200
+2025-05-27 20:38:34.698 DEBUG [32812]      -  Send remote log success.
+2025-05-27 20:39:19.106 INFO  [27520] 
+2025-05-27 20:39:19.106 NONE  [27520] --> StovePC_Init
+2025-05-27 20:39:19.107 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:39:19","client_timestamp":"1748345959106","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab40a42-4bbb-4868-bcf4-896f9ca7b375","uuid":""}
+2025-05-27 20:39:19.107 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:19.107 NONE  [27520]     checking input config value...
+2025-05-27 20:39:19.107 NONE  [27520]     config value checking successful
+2025-05-27 20:39:19.107 NONE  [27520]     checking log...
+2025-05-27 20:39:19.107 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:38:34","client_timestamp":"1748345914670","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab40a42-4bbb-4868-bcf4-896f9ca7b375","uuid":""}
+2025-05-27 20:39:19.107 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:19.107 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:39:19.107 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:39:19.107 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:39:19.107 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:39:19.107 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:39:19.107 INFO  [27520] 
+2025-05-27 20:39:19.107 NONE  [27520] --> StovePC_Init
+2025-05-27 20:39:19.107 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:39:19","client_timestamp":"1748345959106","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab40a42-4bbb-4868-bcf4-896f9ca7b375","uuid":""}
+2025-05-27 20:39:19.107 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:19.107 NONE  [27520]     checking input config value...
+2025-05-27 20:39:19.107 NONE  [27520]     config value checking successful
+2025-05-27 20:39:19.107 NONE  [27520]     checking log...
+2025-05-27 20:39:19.107 NONE  [27520] ---------------------------------------------
+2025-05-27 20:39:19.107 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:39:19.107 NONE  [27520] Game Env : live
+2025-05-27 20:39:19.107 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:39:19.107 NONE  [27520] Game LogPath : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol\Logs
+2025-05-27 20:39:19.107 NONE  [27520] ---------------------------------------------
+2025-05-27 20:39:19.107 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:39:19.107 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:39:19.107 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:39:19.107 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:39:19.107 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:39:19.107 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:39:19.107 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:39:19.107 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:39:19.107 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:39:19.108 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:39:19.108 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:39:19.108 DEBUG [27520]     commandline : production
+2025-05-27 20:39:19.108 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:39:19.108 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:39:19.108 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:39:19.108 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:39:19.108 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:39:19.108 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:39:19.108 DEBUG [27520]     init tasks
+2025-05-27 20:39:19.108 DEBUG [27520]     transactionId : bb47cb4b-0196-4288-8725-43fabfe96fc9
+2025-05-27 20:39:19.108 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:39:19.108 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:39:19.108 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:39:19.108 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:39:19.108 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:39:19.108 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:39:19.108 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:39:19.108 INFO  [27520]     protocol data from ipc
+2025-05-27 20:39:19.108 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:39:19.109 ERROR [27520]     Init sgup task error
+2025-05-27 20:39:19.109 ERROR [27520]     init tasks - error
+2025-05-27 20:39:19.109 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:39:19.109 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:39:19","client_timestamp":"1748345959109","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"bb47cb4b-0196-4288-8725-43fabfe96fc9","uuid":""}
+2025-05-27 20:39:19.109 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:19.109 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:39:19.170 DEBUG [32876]     -StoveLog rest: response is 200
+2025-05-27 20:39:19.170 DEBUG [32876]      -  Send remote log success.
+2025-05-27 20:39:19.170 DEBUG [32876]     -StoveLog rest: response is 200
+2025-05-27 20:39:19.171 DEBUG [32876]      -  Send remote log success.
+2025-05-27 20:39:22.141 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:39:22.141 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:39:22","client_timestamp":"1748345962141","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"bb47cb4b-0196-4288-8725-43fabfe96fc9","uuid":""}
+2025-05-27 20:39:22.141 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:22.142 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:39:22","client_timestamp":"1748345962142","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"bb47cb4b-0196-4288-8725-43fabfe96fc9","uuid":""}
+2025-05-27 20:39:22.142 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:22.142 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:39:22.169 DEBUG [30108]     -StoveLog rest: response is 200
+2025-05-27 20:39:22.169 DEBUG [30108]      -  Send remote log success.
+2025-05-27 20:39:22.169 DEBUG [24052]     -StoveLog rest: response is 200
+2025-05-27 20:39:22.169 DEBUG [24052]      -  Send remote log success.
+2025-05-27 20:39:51.527 INFO  [27520] 
+2025-05-27 20:39:51.527 NONE  [27520] --> StovePC_Init
+2025-05-27 20:39:51.527 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:39:51","client_timestamp":"1748345991527","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"bb47cb4b-0196-4288-8725-43fabfe96fc9","uuid":""}
+2025-05-27 20:39:51.527 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:51.527 NONE  [27520]     checking input config value...
+2025-05-27 20:39:51.527 NONE  [27520]     config value checking successful
+2025-05-27 20:39:51.527 NONE  [27520]     checking log...
+2025-05-27 20:39:51.527 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:39:22","client_timestamp":"1748345962142","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"bb47cb4b-0196-4288-8725-43fabfe96fc9","uuid":""}
+2025-05-27 20:39:51.527 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:51.527 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:39:51.527 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:39:51.527 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:39:51.527 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:39:51.527 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:39:51.527 INFO  [27520] 
+2025-05-27 20:39:51.527 NONE  [27520] --> StovePC_Init
+2025-05-27 20:39:51.527 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\GamePrj\\Project_Pistol\\Logs","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:39:51","client_timestamp":"1748345991527","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"bb47cb4b-0196-4288-8725-43fabfe96fc9","uuid":""}
+2025-05-27 20:39:51.527 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:51.528 NONE  [27520]     checking input config value...
+2025-05-27 20:39:51.528 NONE  [27520]     config value checking successful
+2025-05-27 20:39:51.528 NONE  [27520]     checking log...
+2025-05-27 20:39:51.528 NONE  [27520] ---------------------------------------------
+2025-05-27 20:39:51.528 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:39:51.528 NONE  [27520] Game Env : live
+2025-05-27 20:39:51.528 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:39:51.528 NONE  [27520] Game LogPath : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol\Logs
+2025-05-27 20:39:51.528 NONE  [27520] ---------------------------------------------
+2025-05-27 20:39:51.528 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:39:51.528 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:39:51.528 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:39:51.528 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:39:51.528 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : production
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:39:51.528 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:39:51.528 DEBUG [27520]     init tasks
+2025-05-27 20:39:51.528 DEBUG [27520]     transactionId : 1ab142d0-7caf-4e2e-a138-ed6f8bb0495f
+2025-05-27 20:39:51.528 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:39:51.528 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:39:51.528 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:39:51.528 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:39:51.529 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:39:51.529 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:39:51.529 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:39:51.529 INFO  [27520]     protocol data from ipc
+2025-05-27 20:39:51.529 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:39:51.529 ERROR [27520]     Init sgup task error
+2025-05-27 20:39:51.529 ERROR [27520]     init tasks - error
+2025-05-27 20:39:51.529 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:39:51.529 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:39:51","client_timestamp":"1748345991529","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab142d0-7caf-4e2e-a138-ed6f8bb0495f","uuid":""}
+2025-05-27 20:39:51.529 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:51.529 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:39:51.577 DEBUG [24052]     -StoveLog rest: response is 200
+2025-05-27 20:39:51.577 DEBUG [24052]      -  Send remote log success.
+2025-05-27 20:39:51.577 DEBUG [32876]     -StoveLog rest: response is 200
+2025-05-27 20:39:51.577 DEBUG [32876]      -  Send remote log success.
+2025-05-27 20:39:54.428 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:39:54.428 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:39:54","client_timestamp":"1748345994428","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab142d0-7caf-4e2e-a138-ed6f8bb0495f","uuid":""}
+2025-05-27 20:39:54.428 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:54.428 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:39:54","client_timestamp":"1748345994428","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab142d0-7caf-4e2e-a138-ed6f8bb0495f","uuid":""}
+2025-05-27 20:39:54.428 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:39:54.428 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:39:54.467 DEBUG [24052]     -StoveLog rest: response is 200
+2025-05-27 20:39:54.467 DEBUG [24052]      -  Send remote log success.
+2025-05-27 20:39:54.471 DEBUG [24052]     -StoveLog rest: response is 200
+2025-05-27 20:39:54.471 DEBUG [24052]      -  Send remote log success.
+2025-05-27 20:41:12.694 INFO  [27520] 
+2025-05-27 20:41:12.694 NONE  [27520] --> StovePC_Init
+2025-05-27 20:41:12.694 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\Master_Shooter_Trainer","secret":""},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:41:12","client_timestamp":"1748346072694","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab142d0-7caf-4e2e-a138-ed6f8bb0495f","uuid":""}
+2025-05-27 20:41:12.695 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:41:12.695 NONE  [27520]     checking input config value...
+2025-05-27 20:41:12.695 ERROR [27520] StovePCConfig appkey invalid
+2025-05-27 20:41:12.695 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"config is invalid","error_type":"50"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:41:12","client_timestamp":"1748346072695","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab142d0-7caf-4e2e-a138-ed6f8bb0495f","uuid":""}
+2025-05-27 20:41:12.695 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:41:12.695 ERROR [27520]     config is invalid
+2025-05-27 20:41:12.732 DEBUG [13944]     -StoveLog rest: response is 200
+2025-05-27 20:41:12.732 DEBUG [13944]      -  Send remote log success.
+2025-05-27 20:41:12.733 DEBUG [13944]     -StoveLog rest: response is 200
+2025-05-27 20:41:12.733 DEBUG [13944]      -  Send remote log success.
+2025-05-27 20:41:15.744 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:41:15.744 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:41:15","client_timestamp":"1748346075744","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab142d0-7caf-4e2e-a138-ed6f8bb0495f","uuid":""}
+2025-05-27 20:41:15.744 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:41:15.744 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:41:15","client_timestamp":"1748346075744","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab142d0-7caf-4e2e-a138-ed6f8bb0495f","uuid":""}
+2025-05-27 20:41:15.744 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:41:15.744 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:41:15.780 DEBUG [30672]     -StoveLog rest: response is 200
+2025-05-27 20:41:15.780 DEBUG [30672]      -  Send remote log success.
+2025-05-27 20:41:15.781 DEBUG [13944]     -StoveLog rest: response is 200
+2025-05-27 20:41:15.781 DEBUG [13944]      -  Send remote log success.
+2025-05-27 20:45:50.360 INFO  [27520] 
+2025-05-27 20:45:50.363 NONE  [27520] --> StovePC_Init
+2025-05-27 20:45:50.367 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\Master_Shooter_Trainer","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:45:50","client_timestamp":"1748346350366","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab142d0-7caf-4e2e-a138-ed6f8bb0495f","uuid":""}
+2025-05-27 20:45:50.367 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:45:50.372 NONE  [27520]     checking input config value...
+2025-05-27 20:45:50.372 NONE  [27520]     config value checking successful
+2025-05-27 20:45:50.372 NONE  [27520]     checking log...
+2025-05-27 20:45:50.372 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:41:15","client_timestamp":"1748346075744","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab142d0-7caf-4e2e-a138-ed6f8bb0495f","uuid":""}
+2025-05-27 20:45:50.372 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:45:50.372 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:45:50.372 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:45:50.372 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:45:50.372 DEBUG [27520]     -StoveLog rest: response is 200
+2025-05-27 20:45:50.372 DEBUG [27520]      -  Send remote log success.
+2025-05-27 20:45:50.372 INFO  [27520] 
+2025-05-27 20:45:50.372 NONE  [27520] --> StovePC_Init
+2025-05-27 20:45:50.372 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"4","logpath":"C:\\Users\\Profiler\\Desktop\\Master_Shooter_Trainer","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-27T20:45:50","client_timestamp":"1748346350366","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"1ab142d0-7caf-4e2e-a138-ed6f8bb0495f","uuid":""}
+2025-05-27 20:45:50.372 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:45:50.372 NONE  [27520]     checking input config value...
+2025-05-27 20:45:50.372 NONE  [27520]     config value checking successful
+2025-05-27 20:45:50.372 NONE  [27520]     checking log...
+2025-05-27 20:45:50.372 NONE  [27520] ---------------------------------------------
+2025-05-27 20:45:50.372 NONE  [27520] StovePCSDK(ver :2.6.6)
+2025-05-27 20:45:50.372 NONE  [27520] Game Env : live
+2025-05-27 20:45:50.372 NONE  [27520] Game LogLevel : 4
+2025-05-27 20:45:50.372 NONE  [27520] Game LogPath : C:\Users\Profiler\Desktop\Master_Shooter_Trainer
+2025-05-27 20:45:50.372 NONE  [27520] ---------------------------------------------
+2025-05-27 20:45:50.372 NONE  [27520]     core instance creation in progress...
+2025-05-27 20:45:50.373 DEBUG [27520]     osLanguage : ko
+2025-05-27 20:45:50.373 DEBUG [27520]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-27 20:45:50.373 WARN  [27520]     .stove.popup.json file does not exist
+2025-05-27 20:45:50.373 DEBUG [27520]     ShutdownCallback - Off
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : -projectpath
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : -useHub
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : -hubIPC
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : -cloudEnvironment
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : production
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : -licensingIpc
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : LicenseClient-Profiler
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : -hubSessionId
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : 6a897563-26f4-4985-86af-36102e076b3e
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : -accessToken
+2025-05-27 20:45:50.374 DEBUG [27520]     commandline : KoTC94cBuwkz4Y3IfXNLsg3p8tifUB7FmQ9pPZ98_PI00df
+2025-05-27 20:45:50.375 DEBUG [27520]     init tasks
+2025-05-27 20:45:50.375 DEBUG [27520]     transactionId : 6de2bca3-3c90-4610-89f0-6d2f099ce3c6
+2025-05-27 20:45:50.375 DEBUG [27520]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-27 20:45:50.375 DEBUG [27520]     subkey : SOFTWARE\SGUP
+2025-05-27 20:45:50.375 DEBUG [27520]     RegOpenKeyEx : 0
+2025-05-27 20:45:50.376 DEBUG [27520]     RegQueryValueEx : 0, size : 82
+2025-05-27 20:45:50.376 DEBUG [27520]     RegQueryValueEx : 0
+2025-05-27 20:45:50.376 DEBUG [27520]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-27 20:45:50.376 INFO  [27520] --> SGUPAPITask::Init
+2025-05-27 20:45:50.386 INFO  [27520]     protocol data from ipc
+2025-05-27 20:45:50.387 ERROR [27520]     SGUPAPI_Init is fail
+2025-05-27 20:45:50.387 ERROR [27520]     Init sgup task error
+2025-05-27 20:45:50.387 ERROR [27520]     init tasks - error
+2025-05-27 20:45:50.387 DEBUG [27520]     tasks UnInit error
+2025-05-27 20:45:50.390 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-27T20:45:50","client_timestamp":"1748346350390","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"6de2bca3-3c90-4610-89f0-6d2f099ce3c6","uuid":""}
+2025-05-27 20:45:50.390 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:45:50.391 ERROR [27520]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-27 20:45:50.453 DEBUG [32812]     -StoveLog rest: response is 200
+2025-05-27 20:45:50.453 DEBUG [32812]      -  Send remote log success.
+2025-05-27 20:45:50.454 DEBUG [10400]     -StoveLog rest: response is 200
+2025-05-27 20:45:50.454 DEBUG [10400]      -  Send remote log success.
+2025-05-27 20:46:08.431 INFO  [27520] --> StovePC_UnInit
+2025-05-27 20:46:08.432 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-27T20:46:08","client_timestamp":"1748346368432","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"6de2bca3-3c90-4610-89f0-6d2f099ce3c6","uuid":""}
+2025-05-27 20:46:08.432 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:46:08.447 DEBUG [27520]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-27T20:46:08","client_timestamp":"1748346368447","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"6de2bca3-3c90-4610-89f0-6d2f099ce3c6","uuid":""}
+2025-05-27 20:46:08.448 DEBUG [27520]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-27 20:46:08.448 ERROR [27520]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-27 20:46:08.476 DEBUG [33076]     -StoveLog rest: response is 200
+2025-05-27 20:46:08.476 DEBUG [33076]      -  Send remote log success.
+2025-05-27 20:46:08.484 DEBUG [32812]     -StoveLog rest: response is 200
+2025-05-27 20:46:08.484 DEBUG [32812]      -  Send remote log success.
+2025-05-28 14:05:34.388 NONE  [21676] <<<<< ---------------- StoveSDK Module Load ---------------- >>>>>
+2025-05-28 14:05:34.388 INFO  [21676] 
+2025-05-28 14:05:34.388 NONE  [21676] --> StovePC_Init
+2025-05-28 14:05:34.388 NONE  [21676]     checking input config value...
+2025-05-28 14:05:34.388 NONE  [21676]     config value checking successful
+2025-05-28 14:05:34.388 NONE  [21676]     checking log...
+2025-05-28 14:05:34.388 NONE  [21676] ---------------------------------------------
+2025-05-28 14:05:34.388 NONE  [21676] StovePCSDK(ver :2.6.6)
+2025-05-28 14:05:34.388 NONE  [21676] Game Env : live
+2025-05-28 14:05:34.388 NONE  [21676] Game LogLevel : 4
+2025-05-28 14:05:34.388 NONE  [21676] Game LogPath : 
+2025-05-28 14:05:34.389 NONE  [21676] ---------------------------------------------
+2025-05-28 14:05:34.389 NONE  [21676]     core instance creation in progress...
+2025-05-28 14:05:34.389 DEBUG [21676]     osLanguage : ko
+2025-05-28 14:05:34.389 DEBUG [21676]     .stove.popup.json file path : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\.stove.popup.json
+2025-05-28 14:05:34.389 WARN  [21676]     .stove.popup.json file does not exist
+2025-05-28 14:05:34.389 DEBUG [21676]     ShutdownCallback - Off
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Unity.exe
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : -projectpath
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : C:\Users\Profiler\Desktop\GamePrj\Project_Pistol
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : -useHub
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : -hubIPC
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : -cloudEnvironment
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : production
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : -licensingIpc
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : LicenseClient-Profiler
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : -hubSessionId
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : a7dfd488-7812-428f-9fe0-49eb395cc807
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : -accessToken
+2025-05-28 14:05:34.389 DEBUG [21676]     commandline : gfflKKkI0v2rX-j2nlnW4L1QbIO_9e9ToUnDnobq-9Y00df
+2025-05-28 14:05:34.390 DEBUG [21676]     init tasks
+2025-05-28 14:05:34.390 DEBUG [21676]     transactionId : f9bfe51f-b07b-4a5c-8a37-635a804090b9
+2025-05-28 14:05:34.390 DEBUG [21676]     HKEY_CURRENT_USER : FFFFFFFF80000001
+2025-05-28 14:05:34.390 DEBUG [21676]     subkey : SOFTWARE\SGUP
+2025-05-28 14:05:34.390 DEBUG [21676]     RegOpenKeyEx : 0
+2025-05-28 14:05:34.391 DEBUG [21676]     RegQueryValueEx : 0, size : 82
+2025-05-28 14:05:34.391 DEBUG [21676]     RegQueryValueEx : 0
+2025-05-28 14:05:34.391 DEBUG [21676]     callerDetail : 7421cb5843ba17ce424bc6ae66423343164f09d7
+2025-05-28 14:05:34.391 INFO  [21676] --> SGUPAPITask::Init
+2025-05-28 14:05:34.421 INFO  [21676]     protocol data from ipc
+2025-05-28 14:05:34.421 ERROR [21676]     SGUPAPI_Init is fail
+2025-05-28 14:05:34.421 ERROR [21676]     Init sgup task error
+2025-05-28 14:05:34.421 ERROR [21676]     init tasks - error
+2025-05-28 14:05:34.421 DEBUG [21676]     tasks UnInit error
+2025-05-28 14:05:34.422 DEBUG [21676]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"STOVE_PC_INIT","error_msg":"stove exception default error","error_type":"150"},"action_type":"pcsdk.onerror"},"character_info":null,"client_time":"2025-05-28T14:05:34","client_timestamp":"1748408734422","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"f9bfe51f-b07b-4a5c-8a37-635a804090b9","uuid":""}
+2025-05-28 14:05:34.422 DEBUG [21676]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-28 14:05:34.422 ERROR [21676]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-28 14:05:34.442 DEBUG [15744]     -StoveLog rest: response is 200
+2025-05-28 14:05:34.442 DEBUG [15744]      -  Send remote log success.
+2025-05-28 14:05:34.446 DEBUG [18804]     -StoveLog rest: response is 200
+2025-05-28 14:05:34.446 DEBUG [18804]      -  Send remote log success.
+2025-05-28 14:05:37.512 INFO  [21676] --> StovePC_UnInit
+2025-05-28 14:05:37.513 DEBUG [21676]     log data:
+ {"action_info":{"action_param":{},"action_type":"pcsdk.uninit.try"},"character_info":null,"client_time":"2025-05-28T14:05:37","client_timestamp":"1748408737512","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"f9bfe51f-b07b-4a5c-8a37-635a804090b9","uuid":""}
+2025-05-28 14:05:37.513 DEBUG [21676]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-28 14:05:37.514 DEBUG [21676]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-28T14:05:37","client_timestamp":"1748408737513","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"f9bfe51f-b07b-4a5c-8a37-635a804090b9","uuid":""}
+2025-05-28 14:05:37.514 DEBUG [21676]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-28 14:05:37.514 ERROR [21676]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-28 14:05:37.570 DEBUG [18804]     -StoveLog rest: response is 200
+2025-05-28 14:05:37.570 DEBUG [18804]      -  Send remote log success.
+2025-05-28 14:05:37.570 DEBUG [11164]     -StoveLog rest: response is 200
+2025-05-28 14:05:37.570 DEBUG [11164]      -  Send remote log success.
+2025-05-28 14:08:12.700 INFO  [21676] 
+2025-05-28 14:08:12.700 NONE  [21676] --> StovePC_Init
+2025-05-28 14:08:12.700 DEBUG [21676]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"2","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-28T14:08:12","client_timestamp":"1748408892700","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"f9bfe51f-b07b-4a5c-8a37-635a804090b9","uuid":""}
+2025-05-28 14:08:12.701 DEBUG [21676]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-28 14:08:12.701 NONE  [21676]     checking input config value...
+2025-05-28 14:08:12.701 NONE  [21676]     config value checking successful
+2025-05-28 14:08:12.701 NONE  [21676]     checking log...
+2025-05-28 14:08:12.701 DEBUG [21676]     log data:
+ {"action_info":{"action_param":{"error_external":"","error_func":"StovePC_UnInit","error_msg":"stoveexception","error_type":"100"},"action_type":"pcsdk.uninit.fail"},"character_info":null,"client_time":"2025-05-28T14:05:37","client_timestamp":"1748408737513","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"f9bfe51f-b07b-4a5c-8a37-635a804090b9","uuid":""}
+2025-05-28 14:08:12.701 DEBUG [21676]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-28 14:08:12.701 ERROR [21676]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-28 14:08:12.701 DEBUG [21676]     -StoveLog rest: response is 200
+2025-05-28 14:08:12.701 DEBUG [21676]      -  Send remote log success.
+2025-05-28 14:08:12.701 DEBUG [21676]     -StoveLog rest: response is 200
+2025-05-28 14:08:12.701 DEBUG [21676]      -  Send remote log success.
+2025-05-28 14:08:12.701 INFO  [21676] 
+2025-05-28 14:08:12.701 NONE  [21676] --> StovePC_Init
+2025-05-28 14:08:12.701 DEBUG [21676]     log data:
+ {"action_info":{"action_param":{"app":"c6abad~e98bab","loglevel":"2","logpath":"","secret":"1cab9b~e91f40"},"action_type":"pcsdk.init.try_sync"},"character_info":null,"client_time":"2025-05-28T14:08:12","client_timestamp":"1748408892700","country_ip":"","custom_action_info":null,"device_os":"Windows 10(10.0), 10.0.26100, 64bit","environment":"live","event_tag":"","game_id":"GM-21C0-682EC12F_IND","guid":"","locale":"ko","log_source_type":"pc_sdk","member_no":"","protocol_type":"ipc","ref_session_id":"","ref_source_type":"","sdk_version":"2.6.6","service_protocol":"","session_id":"f9bfe51f-b07b-4a5c-8a37-635a804090b9","uuid":""}
+2025-05-28 14:08:12.701 DEBUG [21676]     RemoteLog url: http://logs.81plug.com/std_stove
+2025-05-28 14:08:12.701 NONE  [21676]     checking input config value...
+2025-05-28 14:08:12.701 NONE  [21676]     config value checking successful
+2025-05-28 14:08:12.701 NONE  [21676]     checking log...
+2025-05-28 14:08:12.701 NONE  [21676] ---------------------------------------------
+2025-05-28 14:08:12.701 NONE  [21676] StovePCSDK(ver :2.6.6)
+2025-05-28 14:08:12.701 NONE  [21676] Game Env : live
+2025-05-28 14:08:12.701 NONE  [21676] Game LogLevel : 2
+2025-05-28 14:08:12.701 NONE  [21676] Game LogPath : 
+2025-05-28 14:08:12.701 NONE  [21676] ---------------------------------------------
+2025-05-28 14:08:12.701 NONE  [21676]     core instance creation in progress...
+2025-05-28 14:08:12.702 ERROR [21676]     SGUPAPI_Init is fail
+2025-05-28 14:08:12.702 ERROR [21676]     Init sgup task error
+2025-05-28 14:08:12.702 ERROR [21676]     init tasks - error
+2025-05-28 14:08:12.702 ERROR [21676]     error occurred when calling StovePC_Init. StovePCResult : 150
+2025-05-28 14:08:15.150 ERROR [21676]     StovePC_UnInit stove exception occurred. StovePCResult : 100
+2025-05-28 14:10:56.645 NONE  [24716] <<<<< ---------------- StoveSDK Module Load ---------------- >>>>>
+2025-05-28 14:10:56.646 INFO  [24716] 
+2025-05-28 14:10:56.646 NONE  [24716] --> StovePC_Init
+2025-05-28 14:10:56.646 NONE  [24716]     checking input config value...
+2025-05-28 14:10:56.646 NONE  [24716]     config value checking successful
+2025-05-28 14:10:56.646 NONE  [24716]     checking log...
+2025-05-28 14:10:56.646 NONE  [24716] ---------------------------------------------
+2025-05-28 14:10:56.646 NONE  [24716] StovePCSDK(ver :2.6.6)
+2025-05-28 14:10:56.646 NONE  [24716] Game Env : live
+2025-05-28 14:10:56.646 NONE  [24716] Game LogLevel : 2
+2025-05-28 14:10:56.646 NONE  [24716] Game LogPath : 
+2025-05-28 14:10:56.646 NONE  [24716] ---------------------------------------------
+2025-05-28 14:10:56.646 NONE  [24716]     core instance creation in progress...
+2025-05-28 14:10:56.655 NONE  [34812]     async init start...
+2025-05-28 14:10:56.962 NONE  [34812]     constans server connect complete...
+2025-05-28 14:10:59.022 NONE  [34812]     token initialize successful...
+2025-05-28 14:10:59.078 NONE  [34812]     gds collect complete...
+2025-05-28 14:10:59.078 ERROR [34812]     access token is empty.
+2025-05-28 14:10:59.079 ERROR [34812]     fail to get memberinfo
+2025-05-28 14:11:07.429 ERROR [24716]     StovePC_UnInit: sdk not initialize
+2025-05-28 14:11:13.037 NONE  [24716] --> StovePC_Init
+2025-05-28 14:11:13.037 NONE  [24716]     checking input config value...
+2025-05-28 14:11:13.037 NONE  [24716]     config value checking successful
+2025-05-28 14:11:13.037 NONE  [24716]     checking log...
+2025-05-28 14:11:13.037 ERROR [24716]     StovePC_UnInit: sdk not initialize
+2025-05-28 14:11:13.037 NONE  [24716] --> StovePC_Init
+2025-05-28 14:11:13.037 NONE  [24716]     checking input config value...
+2025-05-28 14:11:13.037 NONE  [24716]     config value checking successful
+2025-05-28 14:11:13.037 NONE  [24716]     checking log...
+2025-05-28 14:11:13.037 NONE  [24716] ---------------------------------------------
+2025-05-28 14:11:13.037 NONE  [24716] StovePCSDK(ver :2.6.6)
+2025-05-28 14:11:13.037 NONE  [24716] Game Env : live
+2025-05-28 14:11:13.037 NONE  [24716] Game LogLevel : 2
+2025-05-28 14:11:13.037 NONE  [24716] Game LogPath : 
+2025-05-28 14:11:13.037 NONE  [24716] ---------------------------------------------
+2025-05-28 14:11:13.037 NONE  [24716]     core instance creation in progress...
+2025-05-28 14:11:13.038 NONE  [26564]     async init start...
+2025-05-28 14:11:13.089 NONE  [26564]     constans server connect complete...
+2025-05-28 14:11:13.881 NONE  [26564]     token initialize successful...
+2025-05-28 14:11:13.932 NONE  [26564]     gds collect complete...
+2025-05-28 14:11:13.932 ERROR [26564]     access token is empty.
+2025-05-28 14:11:13.933 ERROR [26564]     fail to get memberinfo
+2025-05-28 14:11:47.457 ERROR [24716]     StovePC_UnInit: sdk not initialize
