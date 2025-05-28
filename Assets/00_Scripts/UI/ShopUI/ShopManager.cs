@@ -31,8 +31,8 @@ public class ShopManager : SingletonBehaviour<ShopManager>
     protected override void Awake()
     {
         base.Awake();
-        gold = 1500;  // 기본
-        goldText.text = "Gold: " + gold;
+        
+        goldText.text = "Gold: " + GameManager.Instance.gold;
     }
 
     public void ShowContent()

@@ -89,6 +89,7 @@ public class StageManager : SingletonBehaviour<StageManager>
             
             resultUI.SetResultValue(GameScore, RemainTime,
                 shotAccuracy, headShotAccuracy, MaxDestroyTargetCombo);
+            GameManager.Instance.gold += GameScore / 10000;
         }
         Player.Controller.enabled = false;
     }

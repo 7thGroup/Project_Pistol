@@ -8,7 +8,7 @@ public sealed class GameManager : SingletonBehaviour<GameManager>
     public CharacterSO selectedCharacter;
     public WeaponSO selectedWeapon;
     public bool isOption = false;
-
+    public int gold = 2000;
 
     /// <summary>
     /// PopupOption 여닫기 
