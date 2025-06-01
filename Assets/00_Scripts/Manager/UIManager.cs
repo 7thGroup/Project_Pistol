@@ -185,7 +185,11 @@ public sealed class UIManager : SingletonBehaviour<UIManager>
     /// <para>False: 마우스 커서 비활성화</para></param>
     public static void ToggleMouseCursor(bool isActivation)
     {
+        #if UNITY_STANDALONE_OSX || UNITY_EDITOR_OSX
+        Cursor.lockState = isActivation ? CursorLockMode.None : CursorLockMode.Locked;
+        #else
         Cursor.lockState = isActivation ? CursorLockMode.None : CursorLockMode.Confined;
+        #endif
         Cursor.visible = isActivation;
     }
 

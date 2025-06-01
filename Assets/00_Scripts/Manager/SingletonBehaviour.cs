@@ -26,6 +26,11 @@ public abstract class SingletonBehaviour<T> : MonoBehaviour where T : Component
     {
         RemoveDuplicates();
     }
+    
+    protected virtual void OnDestroy()
+    {
+        instance = null;
+    }
 
     /// <summary>
     /// 인스턴스 생성
