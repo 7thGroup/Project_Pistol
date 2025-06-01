@@ -160,15 +160,5 @@ public class FirebaseManager : SingletonBehaviour<FirebaseManager>
 
         return result;
     }
-    //도전과제 달성 상태 확인
-    public async Task<bool> IsAchievementCompletedAsync(string achievementId)
-    {
-        var docRef = db.Collection("users")
-                       .Document(user.UserId)
-                       .Collection("achievements")
-                       .Document(achievementId);
 
-        var snapshot = await docRef.GetSnapshotAsync();
-        return snapshot.Exists && snapshot.ContainsField("isCompleted") && snapshot.GetValue<bool>("isCompleted");
-    }
 }
