@@ -8,12 +8,14 @@ public class PopupAchievementView : PopupUI
 
     void OnEnable()
     {
+        // 기존 아이템 반환
         for (int i = itemPos.childCount - 1; i >= 0; i--)
         {
             var child = itemPos.GetChild(i).gameObject;
             ObjectPoolManager.Instance.ReturnToPool(child);
         }
-        
+
+        // 아이템 초기화 실행
         _ = InitAchievementItems().ContinueWith(t =>
         {
             if (t.Exception != null)
@@ -21,20 +23,18 @@ public class PopupAchievementView : PopupUI
         });
     }
 
-    async Task InitAchievementItems()
+    private async Task InitAchievementItems()
     {
-        AchievementSO[] allAchievement = ResourceManager.Instance.LoadAll<AchievementSO>("Data/SO/AchievementSO");
+        AchievementSO[] allAchievements = ResourceManager.Instance.LoadAll<AchievementSO>("Data/SO/AchievementSO");
 
-        await AchievementManager.Instance.SyncAchievementsFromServer(); // 서버에서 최신 도전과제 상태 로딩
-
-        foreach (var so in allAchievement)
+        foreach (var so in allAchievements)
         {
-            GameObject achievementItems = ObjectPoolManager.Instance.GetObject(achievementItem, Vector3.zero, Quaternion.identity);
-            achievementItems.transform.SetParent(itemPos, false);
+            GameObject itemGO = ObjectPoolManager.Instance.GetObject(achievementItem, Vector3.zero, Quaternion.identity);
+            itemGO.transform.SetParent(itemPos, false);
 
-            LobbyAchievementItem lobbyAchievement = achievementItems.GetComponent<LobbyAchievementItem>();
-            lobbyAchievement.achievementSO = so;
-            lobbyAchievement.InitData(); // 도전과제 상태 설정 (뱃지 포함)
+            LobbyAchievementItem item = itemGO.GetComponent<LobbyAchievementItem>();
+            item.achievementSO = so;
+            await item.InitData();
         }
     }
 }
